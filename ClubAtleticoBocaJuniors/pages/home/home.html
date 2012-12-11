@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+</head>
+<body>
+    
+    <div id="itemTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item">
+            <div class="item-overlay">
+                <h4 class="item-title" data-win-bind="textContent: nombre"></h4>
+                <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: direccion"></h6>
+            </div>
+        </div>
+    </div>
+    
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Club Atletico Boca Juniors</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div class="aboutbox contentBox">
+                <button id="laBombonera">LA BOMBONERA</button>
+                <br/><br/>
+                <button id="historia">HISTORIA</button>
+                <button id="historiaEquipos">HISTORIA EQUIPOS</button>
+                <button id="historiaCamisetas">HISTORIA CAMISETAS</button>
+                <br/><br/>
+                <button id="noticias">NOTICIAS</button>
+                <button id="comisionDirectiva">COMISION DIRECTIVA</button>
+                
+                <p id="masBarrio"></p>
+                <div style="width:100%;">
+                    <div id="lista" aria-label="Lista de Hoteles" data-win-control="WinJS.UI.ListView" data-win-options="{selectionMode: 'none', horizonal: false}"></div>
+                </div>
+            </div>
+            
+            <div class="map">
+                <div id="bingMap"></div>
+            </div>
+        </section>
+    </div>
+    
+    <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <!--<button id="list" data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'markItem', section:'selection', label:'Marcar como leido', icon:'list'}"></button>-->
+        
+        <button id="globe" data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'refresh', label:'Calles', icon:'globe'}" type="button"></button>
+        <button id="world" data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'refresh', label:'Satelite', icon:'world'}" type="button"></button>
+    </div>
+</body>
+</html>
