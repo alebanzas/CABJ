@@ -1,0 +1,12 @@
+﻿.laBombonera .content article {
+    column-fill: auto;
+    column-gap: 80px;
+    column-width: 480px;
+    height: calc(100% - 183px);
+    margin-left: 120px;
+    width: 480px;
+}
+
+@media screen and (-ms-view-state: snapped) { }
+
+@media screen and (-ms-view-state: portrait) { }

@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ALEJANDRO</Machine>
+    <WindowsUser>Usuario</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\about.html">
+      <PackagePath>pages\about.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\historiaCamisetas\historiaCamisetas.html">
+      <PackagePath>pages\historiaCamisetas\historiaCamisetas.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\historia\historia.html">
+      <PackagePath>pages\historia\historia.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\groupDetail\groupDetail.html">
+      <PackagePath>pages\groupDetail\groupDetail.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\groupedItems\groupedItems.html">
+      <PackagePath>pages\groupedItems\groupedItems.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\comisionDirectiva\comisionDirectiva.html">
+      <PackagePath>pages\comisionDirectiva\comisionDirectiva.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\historiaEquipos\historiaEquipos.html">
+      <PackagePath>pages\historiaEquipos\historiaEquipos.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\laBombonera\laBombonera.html">
+      <PackagePath>pages\laBombonera\laBombonera.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\itemDetail\itemDetail.html">
+      <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\searchResults\searchResults.html">
+      <PackagePath>pages\searchResults\searchResults.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\bombonera.jpg">
+      <PackagePath>images\bombonera.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\Bombonera_construccion.jpg">
+      <PackagePath>images\Bombonera_construccion.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1905a.jpg">
+      <PackagePath>images\camisetas\camiseta_1905a.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1905b.jpg">
+      <PackagePath>images\camisetas\camiseta_1905b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1908-1913.jpg">
+      <PackagePath>images\camisetas\camiseta_1908-1913.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1916a.jpg">
+      <PackagePath>images\camisetas\camiseta_1916a.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1916b.jpg">
+      <PackagePath>images\camisetas\camiseta_1916b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1940_decada_frente.jpg">
+      <PackagePath>images\camisetas\camiseta_1940_decada_frente.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1972-1974.jpg">
+      <PackagePath>images\camisetas\camiseta_1972-1974.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1980a.jpg">
+      <PackagePath>images\camisetas\camiseta_1980a.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1980b.jpg">
+      <PackagePath>images\camisetas\camiseta_1980b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1983.jpg">
+      <PackagePath>images\camisetas\camiseta_1983.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1989-1992.jpg">
+      <PackagePath>images\camisetas\camiseta_1989-1992.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1992a.jpg">
+      <PackagePath>images\camisetas\camiseta_1992a.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1992b.jpg">
+      <PackagePath>images\camisetas\camiseta_1992b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1996a.jpg">
+      <PackagePath>images\camisetas\camiseta_1996a.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1996b.jpg">
+      <PackagePath>images\camisetas\camiseta_1996b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1996c.jpg">
+      <PackagePath>images\camisetas\camiseta_1996c.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1997-1999.jpg">
+      <PackagePath>images\camisetas\camiseta_1997-1999.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_1998.jpg">
+      <PackagePath>images\camisetas\camiseta_1998.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2000a.jpg">
+      <PackagePath>images\camisetas\camiseta_2000a.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2000b.jpg">
+      <PackagePath>images\camisetas\camiseta_2000b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2000c.jpg">
+      <PackagePath>images\camisetas\camiseta_2000c.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2001.jpg">
+      <PackagePath>images\camisetas\camiseta_2001.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2003.jpg">
+      <PackagePath>images\camisetas\camiseta_2003.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2006.jpg">
+      <PackagePath>images\camisetas\camiseta_2006.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2008.jpg">
+      <PackagePath>images\camisetas\camiseta_2008.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2008b.jpg">
+      <PackagePath>images\camisetas\camiseta_2008b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2009.jpg">
+      <PackagePath>images\camisetas\camiseta_2009.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2009b.jpg">
+      <PackagePath>images\camisetas\camiseta_2009b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2010.jpg">
+      <PackagePath>images\camisetas\camiseta_2010.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2010_b.jpg">
+      <PackagePath>images\camisetas\camiseta_2010_b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2011.jpg">
+      <PackagePath>images\camisetas\camiseta_2011.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2011_b.jpg">
+      <PackagePath>images\camisetas\camiseta_2011_b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\camiseta_2012_b.jpg">
+      <PackagePath>images\camisetas\camiseta_2012_b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\daniel_angelici.jpg">
+      <PackagePath>images\daniel_angelici.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\Estadio_Boca_Juniors_1929.jpg">
+      <PackagePath>images\Estadio_Boca_Juniors_1929.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1925b.jpg">
+      <PackagePath>images\historia\Boca_1925b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1977.jpg">
+      <PackagePath>images\historia\Boca_1977.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1977b.JPG">
+      <PackagePath>images\historia\Boca_1977b.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1981.jpg">
+      <PackagePath>images\historia\Boca_1981.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1954.jpg">
+      <PackagePath>images\historia\Boca_1954.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1.jpg">
+      <PackagePath>images\historia\Boca_1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1919b.jpg">
+      <PackagePath>images\historia\Boca_1919b.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1919.jpg">
+      <PackagePath>images\historia\Boca_1919.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1935.jpg">
+      <PackagePath>images\historia\Boca_1935.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1940.jpg">
+      <PackagePath>images\historia\Boca_1940.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1944.jpg">
+      <PackagePath>images\historia\Boca_1944.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1965.jpg">
+      <PackagePath>images\historia\Boca_1965.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1976.jpg">
+      <PackagePath>images\historia\Boca_1976.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_1925.jpg">
+      <PackagePath>images\historia\Boca_1925.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_h1.jpg">
+      <PackagePath>images\historia\Boca_h1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_h2.jpg">
+      <PackagePath>images\historia\Boca_h2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_h3.jpg">
+      <PackagePath>images\historia\Boca_h3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_h4.jpg">
+      <PackagePath>images\historia\Boca_h4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\historia\Boca_h5.jpg">
+      <PackagePath>images\historia\Boca_h5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\La_Bombonera_en_construcción.jpg">
+      <PackagePath>images\La_Bombonera_en_construcción.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\mapa-acceso-estadio.jpg">
+      <PackagePath>images\mapa-acceso-estadio.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\wallpaper_113_1600_x_1200.jpg">
+      <PackagePath>images\wallpaper_113_1600_x_1200.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\tribuna12.jpg">
+      <PackagePath>images\tribuna12.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1981-a.png">
+      <PackagePath>images\camisetas\big\1981-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1985-1987-a.png">
+      <PackagePath>images\camisetas\big\1985-1987-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1985-1987-b.png">
+      <PackagePath>images\camisetas\big\1985-1987-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1988-1991-a.png">
+      <PackagePath>images\camisetas\big\1988-1991-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1988-1991-b.png">
+      <PackagePath>images\camisetas\big\1988-1991-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1992-1993-a.png">
+      <PackagePath>images\camisetas\big\1992-1993-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1992-1993-b.png">
+      <PackagePath>images\camisetas\big\1992-1993-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1992-a.png">
+      <PackagePath>images\camisetas\big\1992-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1992-b.png">
+      <PackagePath>images\camisetas\big\1992-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1993-a.png">
+      <PackagePath>images\camisetas\big\1993-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1994-1995-a.png">
+      <PackagePath>images\camisetas\big\1994-1995-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1994-1995-b.png">
+      <PackagePath>images\camisetas\big\1994-1995-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1995-a.png">
+      <PackagePath>images\camisetas\big\1995-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1995-b.png">
+      <PackagePath>images\camisetas\big\1995-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1996-1997-a.png">
+      <PackagePath>images\camisetas\big\1996-1997-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1996-1997-b.png">
+      <PackagePath>images\camisetas\big\1996-1997-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1998-1999-a.png">
+      <PackagePath>images\camisetas\big\1998-1999-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1998-1999-b.png">
+      <PackagePath>images\camisetas\big\1998-1999-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1999-2000-a.png">
+      <PackagePath>images\camisetas\big\1999-2000-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\1999-2000-b.png">
+      <PackagePath>images\camisetas\big\1999-2000-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2001-2002-a.png">
+      <PackagePath>images\camisetas\big\2001-2002-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2001-2002-b.png">
+      <PackagePath>images\camisetas\big\2001-2002-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2001-2002-c.png">
+      <PackagePath>images\camisetas\big\2001-2002-c.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2003-2004-a.png">
+      <PackagePath>images\camisetas\big\2003-2004-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2003-2004-b.png">
+      <PackagePath>images\camisetas\big\2003-2004-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2004-2005-a.png">
+      <PackagePath>images\camisetas\big\2004-2005-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2004-2005-b.png">
+      <PackagePath>images\camisetas\big\2004-2005-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2005-a.png">
+      <PackagePath>images\camisetas\big\2005-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2005-b.png">
+      <PackagePath>images\camisetas\big\2005-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2005-centenario-a.png">
+      <PackagePath>images\camisetas\big\2005-centenario-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2005-centenario-b.png">
+      <PackagePath>images\camisetas\big\2005-centenario-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2006-2007-a.png">
+      <PackagePath>images\camisetas\big\2006-2007-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2006-2007-b.png">
+      <PackagePath>images\camisetas\big\2006-2007-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2007-2008-a.png">
+      <PackagePath>images\camisetas\big\2007-2008-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2007-2008-b.png">
+      <PackagePath>images\camisetas\big\2007-2008-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2007-finallibertadores-a.png">
+      <PackagePath>images\camisetas\big\2007-finallibertadores-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2008-2009-a.png">
+      <PackagePath>images\camisetas\big\2008-2009-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2008-2009-b.png">
+      <PackagePath>images\camisetas\big\2008-2009-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2009-2010-b.png">
+      <PackagePath>images\camisetas\big\2009-2010-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2010-2011-a.png">
+      <PackagePath>images\camisetas\big\2010-2011-a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\camisetas\big\2010-2011-b.png">
+      <PackagePath>images\camisetas\big\2010-2011-b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\escudos.png">
+      <PackagePath>images\escudos.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\mapa-estadio.png">
+      <PackagePath>images\mapa-estadio.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\images\widelogo.png">
+      <PackagePath>images\widelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\js\data.js">
+      <PackagePath>js\data.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\historiaCamisetas\historiaCamisetas.js">
+      <PackagePath>pages\historiaCamisetas\historiaCamisetas.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\historia\historia.js">
+      <PackagePath>pages\historia\historia.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\groupDetail\groupDetail.js">
+      <PackagePath>pages\groupDetail\groupDetail.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\groupedItems\groupedItems.js">
+      <PackagePath>pages\groupedItems\groupedItems.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\comisionDirectiva\comisionDirectiva.js">
+      <PackagePath>pages\comisionDirectiva\comisionDirectiva.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\historiaEquipos\historiaEquipos.js">
+      <PackagePath>pages\historiaEquipos\historiaEquipos.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\laBombonera\laBombonera.js">
+      <PackagePath>pages\laBombonera\laBombonera.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\itemDetail\itemDetail.js">
+      <PackagePath>pages\itemDetail\itemDetail.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\searchResults\searchResults.js">
+      <PackagePath>pages\searchResults\searchResults.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\historiaCamisetas\historiaCamisetas.css">
+      <PackagePath>pages\historiaCamisetas\historiaCamisetas.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\historia\historia.css">
+      <PackagePath>pages\historia\historia.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\groupDetail\groupDetail.css">
+      <PackagePath>pages\groupDetail\groupDetail.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\groupedItems\groupedItems.css">
+      <PackagePath>pages\groupedItems\groupedItems.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\comisionDirectiva\comisionDirectiva.css">
+      <PackagePath>pages\comisionDirectiva\comisionDirectiva.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\historiaEquipos\historiaEquipos.css">
+      <PackagePath>pages\historiaEquipos\historiaEquipos.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\laBombonera\laBombonera.css">
+      <PackagePath>pages\laBombonera\laBombonera.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\itemDetail\itemDetail.css">
+      <PackagePath>pages\itemDetail\itemDetail.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\pages\searchResults\searchResults.css">
+      <PackagePath>pages\searchResults\searchResults.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.9200.20512</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20512</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

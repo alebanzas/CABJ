@@ -1,0 +1,26 @@
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bin\Debug\resources.pri
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bin\Debug\AppxManifest.xml
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bin\Debug\ClubAtleticoBocaJuniors.build.appxrecipe
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\priconfig.xml
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\layout.resfiles
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\resources.resfiles
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\pri.resfiles
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\LanguageQualifiers.txt
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\ProjectArchitectures.txt
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\priconfig.xml.intermediate
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\layout.resfiles.intermediate
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\resources.resfiles.intermediate
+C:\Users\Usuario\Desktop\Windows 8 Apps\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\pri.resfiles.intermediate
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bin\Debug\resources.pri
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bin\Debug\AppxManifest.xml
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bin\Debug\ClubAtleticoBocaJuniors.build.appxrecipe
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\priconfig.xml.intermediate
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\layout.resfiles.intermediate
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\resources.resfiles.intermediate
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\pri.resfiles.intermediate
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\priconfig.xml
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\layout.resfiles
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\resources.resfiles
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\pri.resfiles
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\LanguageQualifiers.txt
+C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\bld\Debug\ProjectArchitectures.txt
