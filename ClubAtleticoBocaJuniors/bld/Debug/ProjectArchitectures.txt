@@ -1,1 +1,1 @@
-C:\Users\Usuario\Documents\Proyectos\Windows 8\Reader\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors.jsproj;neutral
+C:\Users\Usuario\Documents\Proyectos\CABJW8\ClubAtleticoBocaJuniors\ClubAtleticoBocaJuniors.jsproj;neutral
