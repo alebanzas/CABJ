@@ -26,3 +26,4 @@ syntax: glob
 obj/
 *resharper*
 _ReSharper*/
+[Bb]ld
