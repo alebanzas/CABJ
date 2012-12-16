@@ -1,18 +1,28 @@
 ﻿.homepage section[role=main] {
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
-	margin-right: 120px;
 }
 
-.contentBox {
-	display: -ms-grid;
+#scrollContainer {
 	height: 100%;
-	-ms-grid-rows: 270px 270px;
-	-ms-grid-columns: 270px 270px 540px 270px 270px;
     overflow-x: scroll;
     overflow-y: hidden;
     -ms-overflow-style: scrollbar;
 	padding-left: 120px;
+}
+
+.contentBox {
+	/*height: 100%;
+	width: 100%;*/
+	display: -ms-grid;
+	-ms-grid-rows: 270px 270px;
+	-ms-grid-columns: 270px 270px 540px 270px 270px 120px;
+}
+
+.contentBox:after {
+	-ms-grid-column: 6;
+	content: '';
+	display: block;
 }
 
 	.contentBox h4 {
