@@ -1,16 +1,18 @@
 ﻿.homepage section[role=main] {
-    padding-left: 120px;
-    padding-top: 30px;
-    display:-ms-grid;
-    /*-ms-grid-rows: 1fr;
-    -ms-grid-columns: 25% calc(75% - 120px);*/
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+	margin-right: 120px;
 }
 
 .contentBox {
 	display: -ms-grid;
+	height: 100%;
 	-ms-grid-rows: 270px 270px;
 	-ms-grid-columns: 270px 270px 540px 270px 270px;
-	padding-right: 120px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: scrollbar;
+	padding-left: 120px;
 }
 
 	.contentBox h4 {
