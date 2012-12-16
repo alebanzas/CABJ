@@ -12,8 +12,6 @@
 }
 
 .contentBox {
-	/*height: 100%;
-	width: 100%;*/
 	display: -ms-grid;
 	-ms-grid-rows: 270px 270px;
 	-ms-grid-columns: 270px 270px 540px 270px 270px 120px; /* La última columna es sólo margen */
