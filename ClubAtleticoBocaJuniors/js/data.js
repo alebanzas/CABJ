@@ -2,9 +2,11 @@
     "use strict";
 
     var feeds = [
-        { key: "group1", url: 'http://www.ole.com.ar/rss/boca-juniors/', logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
-        { key: "group2", url: 'http://www.bocajuniors.com.ar/feed', logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
-   ];
+        { key: "group1", url: 'http://www.bocajuniors.com.ar/noticias', redererFunc: scrapOficialWeb, logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
+        { key: "group2", url: 'http://www.ole.com.ar/rss/boca-juniors/', logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
+    ];
+
+    var loaded = false;
 
     var blogPosts = new WinJS.Binding.List();
     var groupedItems = blogPosts.createGrouped(
@@ -13,6 +15,51 @@
     );
 
     var localFolder = Windows.Storage.ApplicationData.current.localFolder;
+
+    function scrapOficialWeb(responseText, feed) {
+        var rr = window.toStaticHTML(responseText);
+        
+        var html = $("ul.listado li", $(rr)).each(function (postIndex) {
+            var item = $(this);
+            var postTitle = $(".info strong", item).text();
+            var postAuthor = "CABJ Oficial";
+            var postDate = $(".fecha", item).text();
+            var imageUrl = "http://www.bocajuniors.com.ar/" + $(".img img", item).attr("src");
+            var link = "http://www.bocajuniors.com.ar/" + $("a", item).attr("href");
+            var staticContent = $(".info", item).html();
+
+
+            //        <li>
+            //            <a href="/es-ar/noticias/2012/12/15/triunfo-ante-obras">
+            //                <span class="img">
+            //                    <img src="/img/common/noticias-imagen_por_defecto-md.jpg" alt="triunfo-ante-obras">
+            //                    <br>
+            //                </span>
+            //                <span class="info">
+            //                    <div class="cont_titulo_fecha clearfix">
+            //                    <span class="fecha">Dec 15, 2012</span>
+            //                    <strong>Triunfo ante Obras</strong><br>
+            //                </div>
+            //                El equipo de básquet derrotó el jueves a Obras por 93-73, de visitante, por la 12ª fecha de la segunda fase de la Liga Nacional. Volverán a jugar el...
+            //                </span>
+            //            </a>
+            //        </li>
+
+
+            blogPosts.push({
+                group: feed, key: postTitle, title: postTitle,
+                author: postAuthor, pubDate: postDate, backgroundImage: imageUrl,
+                content: staticContent, link: link, postIndex: postIndex
+            });
+        });
+
+        var date = $("ul.listado li:first .fecha", $(rr)).text();
+        feed.title = "Boca Juniors - Sitio Oficial";
+        feed.description = "Por CABJ Oficial actualizado " + date;
+        feed.subtitle = "";
+
+        feed.itemsName = "entry";
+    }
 
     function getFeeds() {
         var dataPromises = [];
@@ -24,7 +71,7 @@
             dataPromises.push(feed.dataPromise);
         });
 
-        return WinJS.Promise.join(dataPromises).then(function () { return feeds; }) // We return the feeds instead of the promise, for signature consistency
+        return WinJS.Promise.join(dataPromises).then(function() { return feeds; }); // We return the feeds instead of the promise, for signature consistency
     };
 
     function isInternetAvailable() {
@@ -38,21 +85,34 @@
             var header = document.querySelector("header h1");
             header.appendChild(pr);
 
+            if (loaded) {
+                var progress = document.getElementsByTagName('progress');
+                progress[0].style.display = "none";
+                return;
+            }
+
             return getFeeds()
                 .then(function (feeds) {
                     feeds.forEach(function (feed) {
                         feed.dataPromise.then(function (articlesResponse) {
-                            var articleSyndication = articlesResponse.responseXML;
+                            
+                            if (feed.redererFunc) {
+                                var responseText = articlesResponse.responseText;
+                                feed.redererFunc(responseText, feed);
+                            } else {
+                                var articleSyndication = articlesResponse.responseXML;
 
-                            if (articleSyndication == null) {
-                                var parser = new DOMParser();
-                                articleSyndication = parser.parseFromString(articlesResponse.responseText, "application/xml");
+                                if (articleSyndication == null) {
+                                    var parser = new DOMParser();
+                                    articleSyndication = parser.parseFromString(articlesResponse.responseText, "application/xml");
+                                }
+
+                                getGroupInfoFromXml(articleSyndication, feed);
+                                getItemsFromXml(articleSyndication, feed);
                             }
-
-                            getGroupInfoFromXml(articleSyndication, feed);
-                            getItemsFromXml(articleSyndication, feed);
                         });
                     });
+                    loaded = true;
                     writeFile(JSON.stringify(blogPosts));
                 })
                 .then(function (feeds) {
