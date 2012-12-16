@@ -3,7 +3,8 @@
 
     var feeds = [
         { key: "group1", url: 'http://www.bocajuniors.com.ar/noticias', redererFunc: scrapOficialWeb, logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
-        { key: "group2", url: 'http://www.ole.com.ar/rss/boca-juniors/', logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
+        { key: "group1", url: 'http://www.bocajuniors.com.ar/es-ar/noticias/p/8', redererFunc: scrapOficialWeb, logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
+        //{ key: "group2", url: 'http://www.ole.com.ar/rss/boca-juniors/', logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
     ];
 
     var loaded = false;
@@ -27,8 +28,7 @@
             var imageUrl = "http://www.bocajuniors.com.ar/" + $(".img img", item).attr("src");
             var link = "http://www.bocajuniors.com.ar/" + $("a", item).attr("href");
             var staticContent = $(".info", item).html();
-
-
+            
             //        <li>
             //            <a href="/es-ar/noticias/2012/12/15/triunfo-ante-obras">
             //                <span class="img">
@@ -57,7 +57,7 @@
         feed.title = "Boca Juniors - Sitio Oficial";
         feed.description = "Por CABJ Oficial actualizado " + date;
         feed.subtitle = "";
-
+        feed.scrapOficialWebItem = true;
         feed.itemsName = "entry";
     }
 
