@@ -200,6 +200,9 @@
     <Content Include="pages\historiaEquipos\historiaEquipos.css" />
     <Content Include="pages\historiaEquipos\historiaEquipos.html" />
     <Content Include="pages\historiaEquipos\historiaEquipos.js" />
+    <Content Include="pages\informacionSocios\informacionSocios.css" />
+    <Content Include="pages\informacionSocios\informacionSocios.html" />
+    <Content Include="pages\informacionSocios\informacionSocios.js" />
     <Content Include="pages\laBombonera\laBombonera.css" />
     <Content Include="pages\laBombonera\laBombonera.html" />
     <Content Include="pages\laBombonera\laBombonera.js" />
