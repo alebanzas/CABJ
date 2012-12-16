@@ -89,7 +89,7 @@
         },
 
         setAppBarCommands: function () {
-            appbar.winControl.disabled = true;
+            //appbar.winControl.disabled = true;
         }
     });
 })();
