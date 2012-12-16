@@ -83,7 +83,7 @@
 			-ms-grid-column: 1;
 			display: block;
 			border-top: 250px solid transparent;
-			border-right: 50px solid #fde91c;
+			border-right: 50px solid #ffbe00;
 		}
 
 		.wide .wedge h4 {
@@ -110,21 +110,21 @@
 	.square .stripe {
 		-ms-grid-row: 2;
 		display: -ms-grid;
-		-ms-grid-columns: 1fr 180px;
+		-ms-grid-columns: 1fr 190px;
 	}
 
 		.square .stripe h4 {
 			-ms-grid-column: 2;
 			height: 30px;
 			width: 170px;
-			padding: 10px 10px 10px 0;
+			padding: 10px;
 		}
 
 		.square .stripe .diagonal {
 			-ms-grid-column: 1;
 			content: '';
 			border-top: 50px solid transparent;
-			border-right: 30px solid #fde91c;
+			border-right: 20px solid #ffbe00;
 		}
 
 .bigSquare {
@@ -151,7 +151,7 @@
 			-ms-grid-column: 1;
 			content: '';
 			border-top: 100px solid transparent;
-			border-right: 50px solid #fde91c;
+			border-right: 40px solid #ffbe00;
 		}
 
 		.bigSquare .stripe h4 {
@@ -162,8 +162,8 @@
 		}
 
 .yellow h4 {
-	color: #00008b;
-	background-color: #fde91c;
+	color: #282b4a;
+	background-color: #ffbe00;
 }
 
 @media screen and (-ms-view-state: snapped) {
