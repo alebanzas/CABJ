@@ -27,3 +27,4 @@ obj/
 *resharper*
 _ReSharper*/
 [Bb]ld
+*.orig
