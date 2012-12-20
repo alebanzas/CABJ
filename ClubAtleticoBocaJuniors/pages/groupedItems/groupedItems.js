@@ -109,9 +109,9 @@
         },
 
         setAppBarCommands: function () {
-            appbar.winControl.disabled = false;
-            appbar.winControl.hideCommands([markItem]); // will always show on items selection
-            appbar.winControl.hideCommands([pinGroup]);
+            //appbar.winControl.disabled = false;
+            //appbar.winControl.hideCommands([markItem]); // will always show on items selection
+            //appbar.winControl.hideCommands([pinGroup]);
         },
 
         bindControls: function (listView, listViewZoomOut, element, options) {
