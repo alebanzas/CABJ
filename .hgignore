@@ -28,3 +28,4 @@ obj/
 _ReSharper*/
 [Bb]ld
 *.orig
+Thumbs.db
