@@ -112,7 +112,7 @@
                 listView.layout = new ui.GridLayout();
 
                 // TODO: Change "App Name" to the name of your app.
-                document.querySelector(".titlearea .pagetitle").textContent = "club atletico boca juniors";
+                document.querySelector(".titlearea .pagetitle").textContent = "Club Atlético Boca Juniors";
                 document.querySelector(".titlearea .pagesubtitle").textContent = "Resultados para “" + this._lastSearch + '”';
             }
         },
