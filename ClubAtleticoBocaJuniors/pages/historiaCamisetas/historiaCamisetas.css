@@ -5,26 +5,27 @@
     height: 100%;
     overflow-x: auto;
     position: relative;
-    width: 100%;
     z-index: 0;
+	width: 100%;
 }
 
 .historiaCamisetas .content article {
     column-fill: auto;
-    column-gap: 80px;
+    column-gap: 0;
     column-span: all;
     column-width: 320px;
     height: calc(100% - 55px);
     margin-left: 120px;
-    width: 320px;
+    width: calc(100% - 120px);
 }
 
 .historiaCamisetas .margen {
     padding-top: 45px;
 }
 
-.historiaCamisetas .content .item-content {
+.historiaCamisetas .content .item-content section {
     height: 100%;
+	width: 320px;
 }
 
 .historiaCamisetas .numeros {

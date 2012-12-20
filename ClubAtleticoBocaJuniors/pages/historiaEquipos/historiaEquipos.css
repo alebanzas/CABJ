@@ -11,16 +11,17 @@
 
 .historiaEquipos .content article {
     column-fill: auto;
-    column-gap: 80px;
+    column-gap: 0;
     column-span: all;
     column-width: 480px;
     height: calc(100% - 55px);
     margin-left: 120px;
-    width: 480px;
+    width: calc(100% - 120px);
 }
 
-.historiaEquipos .content .item-content {
+.historiaEquipos .content .item-content section {
     height: 100%;
+	width: 480px;
 }
 
 .historiaEquipos .numeros {
