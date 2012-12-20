@@ -236,8 +236,46 @@
 @media screen and (-ms-view-state: fullscreen-portrait) {
 	.contentBox {
 		display: -ms-grid;
-		-ms-grid-rows: 270px 270px 270px 270px;
-		-ms-grid-columns: 270px 270px 540px 120px; /* La última columna es sólo margen */
+		-ms-grid-rows: 270px 270px 270px;
+		-ms-grid-columns: 270px 270px 270px 270px 120px; /* La última columna es sólo margen */
+	}
+
+	/* Esta truchada está para que tenga margen a la derecha, sino no me daba bola */
+	.contentBox:after {
+		-ms-grid-column: 5;
+		content: '';
+		display: block;
+	}
+
+	/* Layout */
+
+	#laBombonera {
+		-ms-grid-row: 1;
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 2;
+	}
+
+	#noticias {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+
+	#comisionDirectiva {
+		-ms-grid-row: 3;
+		-ms-grid-column: 3;
+	}
+
+	#informacionSocios {
+		-ms-grid-row: 3;
+		-ms-grid-column: 4;
+	}
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) and (min-device-height: 1366px) {
+	.contentBox {
+		display: -ms-grid;
+		-ms-grid-rows: 270px 270px 540px;
+		-ms-grid-columns: 270px 270px 270px 270px 120px; /* La última columna es sólo margen */
 	}
 
 	/* Esta truchada está para que tenga margen a la derecha, sino no me daba bola */
@@ -250,23 +288,24 @@
 	/* Layout */
 
 	#laBombonera {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+	}
+
+	#noticias {
 		-ms-grid-row: 1;
 		-ms-grid-column: 3;
 	}
 
-	#noticias {
-		-ms-grid-row: 3;
-		-ms-grid-column: 1;
-	}
-
 	#comisionDirectiva {
-		-ms-grid-row: 4;
-		-ms-grid-column: 1;
+		-ms-grid-row: 2;
+		-ms-grid-column: 3;
 	}
 
 	#informacionSocios {
-		-ms-grid-row: 4;
-		-ms-grid-column: 2;
+		-ms-grid-row: 2;
+		-ms-grid-column: 4;
 	}
 }
 
