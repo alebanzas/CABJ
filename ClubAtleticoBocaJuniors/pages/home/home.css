@@ -271,7 +271,7 @@
 	}
 }
 
-@media screen and (-ms-view-state: fullscreen-portrait) and (min-device-height: 1366px) {
+@media screen and (-ms-view-state: fullscreen-portrait) and (min-device-height: 1280px) {
 	.contentBox {
 		display: -ms-grid;
 		-ms-grid-rows: 270px 270px 540px;
@@ -280,7 +280,7 @@
 
 	/* Esta truchada está para que tenga margen a la derecha, sino no me daba bola */
 	.contentBox:after {
-		-ms-grid-column: 4;
+		-ms-grid-column: 5;
 		content: '';
 		display: block;
 	}
