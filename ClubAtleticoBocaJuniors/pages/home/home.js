@@ -32,6 +32,9 @@
             document.getElementById("historiaCamisetas").onclick = function () {
                 nav.navigate("/pages/historiaCamisetas/historiaCamisetas.html", nav.state);
             };
+            document.getElementById("informacionSocios").onclick = function () {
+                nav.navigate("/pages/informacionSocios/informacionSocios.html", nav.state);
+            };
             
             this.getPageInformation(this);
         },

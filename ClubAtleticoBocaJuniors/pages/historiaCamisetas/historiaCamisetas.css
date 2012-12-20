@@ -19,6 +19,10 @@
     width: 320px;
 }
 
+.historiaCamisetas .margen {
+    padding-top: 45px;
+}
+
 .historiaCamisetas .content .item-content {
     height: 100%;
 }
@@ -42,9 +46,37 @@
     width: 320px;
 }
 
+.historiaCamisetas .content article img.auto {
+    width: auto;
+    height: auto;
+}
+
 .historiaCamisetas .content article section {
     break-inside: avoid-column;
     height: inherit;
+}
+
+.historiaCamisetas .numeros {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.historiaCamisetas .numeros td {
+    border-bottom: 1px solid #CCC;
+    height: 40px;
+    vertical-align: central;
+}
+
+.historiaCamisetas .numeros td:last-child {
+    font-weight: bold;
+}
+
+.historiaCamisetas .numeros {
+    clear: both;
+}
+
+.historiaCamisetas .center {
+    text-align: center;
 }
 
 
