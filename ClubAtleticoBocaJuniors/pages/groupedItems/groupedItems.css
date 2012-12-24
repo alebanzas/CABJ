@@ -57,14 +57,6 @@
                 font-family: 'Segoe UI Symbol';
             }
 
-    /*.groupeditemspage .groupeditemslist .item {
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: 1fr 90px;
-        display: -ms-grid;
-        height: 250px;
-        width: 250px;
-    }*/
-
         .groupeditemspage .groupeditemslist .item .item-image {
             -ms-grid-row-span: 2;
         }
@@ -162,10 +154,11 @@
 .smallitemtemplate .item-overlay .item-subtitle {
     display: none;
 }
+
 .groupeditemspage .mediumitemtemplate .item
 {
-    width: 310px;
-    height: 150px;
+    width: 600px;
+    height: 300px;
     -ms-grid-columns: 1fr;
     -ms-grid-rows: 1fr 60px;
     display: -ms-grid;
