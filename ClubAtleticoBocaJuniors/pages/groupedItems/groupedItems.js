@@ -43,10 +43,10 @@
 
             // For the first item, use the largest template.
             if (currentItem.data.postIndex == 0) {
-                result.className = "largeitemtemplate"
+	            result.className = "largeitemtemplate";
             }
             else {
-                result.className = "mediumitemtemplate"
+	            result.className = "mediumitemtemplate";
             }
             // Because we used a WinJS template, we need to strip off some attributes 
             // for it to render.
@@ -81,16 +81,6 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
-
-            //Windows.UI.ApplicationSettings.SettingsPane.getForCurrentView().addEventListener("commandsrequested", function (args) {
-            //    args.request.applicationCommands.clear();
-
-            //    var privacyPref = new Windows.UI.ApplicationSettings.SettingsCommand("privacyPref", "Política de Privacidad", function (uiCommand) {
-            //        Windows.System.Launcher.launchUriAsync(new Windows.Foundation.Uri("http://masaezapps.azurewebsites.net/politica-privacidad/"));
-            //    });
-
-            //    args.request.applicationCommands.append(privacyPref);
-            //});
 
             this.setAppBarCommands();
 
