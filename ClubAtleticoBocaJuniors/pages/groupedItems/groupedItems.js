@@ -13,13 +13,8 @@
             content = document.getElementsByClassName("multisizebaseitemtemplate")[0];
             var result = content.cloneNode(true);
 
-            // For the first item, use the largest template.
-            //if (currentItem.data.postIndex == 0) {
-	        //    result.className = "largeitemtemplate";
-            //}
-            //else {
-	            result.className = "mediumitemtemplate";
-            //}
+            result.className = "mediumitemtemplate";
+	        
             // Because we used a WinJS template, we need to strip off some attributes 
             // for it to render.
             result.attributes.removeNamedItem("data-win-control");
