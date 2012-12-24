@@ -78,8 +78,6 @@
             /// <param name="element" domElement="true" />
 
             var listView = element.querySelector(".groupeditemslist").winControl;
-            var listViewZoomOut = element.querySelector(".groupeditemslistZoomOut").winControl;
-            var semanticZoom = element.querySelector(".sezoDiv").winControl;
 
             var itemTemplate = element.querySelector(".itemtemplate");
 
@@ -91,16 +89,7 @@
                     };
 
                     listView.addEventListener("contentanimating", handler, false);
-                    this._initializeLayout(listView, listViewZoomOut, semanticZoom, viewState, itemTemplate);
-
-                    //appbar.winControl.hideCommands([markItem]);
-                    if (viewState === appViewState.snapped) {
-                        listView.selectionMode = "none";
-                        semanticZoom.zoomedOut = true;
-                        semanticZoom.forceLayout();
-                    }
-                    else
-                        listView.selectionMode = "multi";
+                    this._initializeLayout(listView, viewState, itemTemplate);
                 }
 
             }
