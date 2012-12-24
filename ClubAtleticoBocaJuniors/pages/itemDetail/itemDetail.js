@@ -17,8 +17,6 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
 
-            this.setAppBarCommands();
-
             item = options && options.item ? Data.resolveItemReference(options.item) : Data.items.getAt(0);
             
             if (item.group.scrapOficialWebItem) {
@@ -86,10 +84,6 @@
 
         unload: function () {
             WinJS.Navigation.removeEventListener("datarequested", this.onDataRequested);
-        },
-
-        setAppBarCommands: function () {
-            //appbar.winControl.disabled = true;
         }
     });
 })();
