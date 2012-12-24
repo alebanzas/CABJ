@@ -48,7 +48,7 @@
 
             blogPosts.push({
                 group: feed, key: postTitle, title: postTitle,
-                author: postAuthor, pubDate: postDate, backgroundImage: imageUrl,
+                author: postAuthor, pubDate: postDate, backgroundImage: imageUrl.replace("-md.jpg", "-lg.jpg"), backgroundImageLow: imageUrl,
                 content: staticContent, link: link, postIndex: postIndex
             });
         });
