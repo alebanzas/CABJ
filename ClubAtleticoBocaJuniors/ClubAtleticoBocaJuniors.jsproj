@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>580fef80-0b36-4385-b5d4-3c3dc3296e89</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>es</DefaultLanguage>
+    <PackageCertificateKeyFile>ClubAtleticoBocaJuniors_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>12CB71591325A6A6368FE3C8F9B3D7130401D9A3</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="ClubAtleticoBocaJuniors_StoreKey.pfx" />
+    <Content Include="default.html" />
+    <Content Include="images\bombonera.jpg" />
+    <Content Include="images\Bombonera_construccion.jpg" />
+    <Content Include="images\camisetas\big\1981-a.png" />
+    <Content Include="images\camisetas\big\1985-1987-a.png" />
+    <Content Include="images\camisetas\big\1985-1987-b.png" />
+    <Content Include="images\camisetas\big\1988-1991-a.png" />
+    <Content Include="images\camisetas\big\1988-1991-b.png" />
+    <Content Include="images\camisetas\big\1992-1993-a.png" />
+    <Content Include="images\camisetas\big\1992-1993-b.png" />
+    <Content Include="images\camisetas\big\1992-a.png" />
+    <Content Include="images\camisetas\big\1992-b.png" />
+    <Content Include="images\camisetas\big\1993-a.png" />
+    <Content Include="images\camisetas\big\1994-1995-a.png" />
+    <Content Include="images\camisetas\big\1994-1995-b.png" />
+    <Content Include="images\camisetas\big\1995-a.png" />
+    <Content Include="images\camisetas\big\1995-b.png" />
+    <Content Include="images\camisetas\big\1996-1997-a.png" />
+    <Content Include="images\camisetas\big\1996-1997-b.png" />
+    <Content Include="images\camisetas\big\1998-1999-a.png" />
+    <Content Include="images\camisetas\big\1998-1999-b.png" />
+    <Content Include="images\camisetas\big\1999-2000-a.png" />
+    <Content Include="images\camisetas\big\1999-2000-b.png" />
+    <Content Include="images\camisetas\big\2001-2002-a.png" />
+    <Content Include="images\camisetas\big\2001-2002-b.png" />
+    <Content Include="images\camisetas\big\2001-2002-c.png" />
+    <Content Include="images\camisetas\big\2003-2004-a.png" />
+    <Content Include="images\camisetas\big\2003-2004-b.png" />
+    <Content Include="images\camisetas\big\2004-2005-a.png" />
+    <Content Include="images\camisetas\big\2004-2005-b.png" />
+    <Content Include="images\camisetas\big\2005-a.png" />
+    <Content Include="images\camisetas\big\2005-b.png" />
+    <Content Include="images\camisetas\big\2005-centenario-a.png" />
+    <Content Include="images\camisetas\big\2005-centenario-b.png" />
+    <Content Include="images\camisetas\big\2006-2007-a.png" />
+    <Content Include="images\camisetas\big\2006-2007-b.png" />
+    <Content Include="images\camisetas\big\2007-2008-a.png" />
+    <Content Include="images\camisetas\big\2007-2008-b.png" />
+    <Content Include="images\camisetas\big\2007-finallibertadores-a.png" />
+    <Content Include="images\camisetas\big\2008-2009-a.png" />
+    <Content Include="images\camisetas\big\2008-2009-b.png" />
+    <Content Include="images\camisetas\big\2009-2010-b.png" />
+    <Content Include="images\camisetas\big\2010-2011-a.png" />
+    <Content Include="images\camisetas\big\2010-2011-b.png" />
+    <Content Include="images\camisetas\big\2012-2013-b.png" />
+    <Content Include="images\camisetas\big\2012-2013-a.png" />
+    <Content Include="images\camisetas\camiseta_1905a.jpg" />
+    <Content Include="images\camisetas\camiseta_1905b.jpg" />
+    <Content Include="images\camisetas\camiseta_1908-1913.jpg" />
+    <Content Include="images\camisetas\camiseta_1916a.jpg" />
+    <Content Include="images\camisetas\camiseta_1916b.jpg" />
+    <Content Include="images\camisetas\camiseta_1940_decada_frente.jpg" />
+    <Content Include="images\camisetas\camiseta_1972-1974.jpg" />
+    <Content Include="images\camisetas\camiseta_1980a.jpg" />
+    <Content Include="images\camisetas\camiseta_1980b.jpg" />
+    <Content Include="images\camisetas\camiseta_1983.jpg" />
+    <Content Include="images\camisetas\camiseta_1989-1992.jpg" />
+    <Content Include="images\camisetas\camiseta_1992a.jpg" />
+    <Content Include="images\camisetas\camiseta_1992b.jpg" />
+    <Content Include="images\camisetas\camiseta_1996a.jpg" />
+    <Content Include="images\camisetas\camiseta_1996b.jpg" />
+    <Content Include="images\camisetas\camiseta_1996c.jpg" />
+    <Content Include="images\camisetas\camiseta_1997-1999.jpg" />
+    <Content Include="images\camisetas\camiseta_1998.jpg" />
+    <Content Include="images\camisetas\camiseta_2000a.jpg" />
+    <Content Include="images\camisetas\camiseta_2000b.jpg" />
+    <Content Include="images\camisetas\camiseta_2000c.jpg" />
+    <Content Include="images\camisetas\camiseta_2001.jpg" />
+    <Content Include="images\camisetas\camiseta_2003.jpg" />
+    <Content Include="images\camisetas\camiseta_2006.jpg" />
+    <Content Include="images\camisetas\camiseta_2008.jpg" />
+    <Content Include="images\camisetas\camiseta_2008b.jpg" />
+    <Content Include="images\camisetas\camiseta_2009.jpg" />
+    <Content Include="images\camisetas\camiseta_2009b.jpg" />
+    <Content Include="images\camisetas\camiseta_2010.jpg" />
+    <Content Include="images\camisetas\camiseta_2010_b.jpg" />
+    <Content Include="images\camisetas\camiseta_2011.jpg" />
+    <Content Include="images\camisetas\camiseta_2011_b.jpg" />
+    <Content Include="images\camisetas\camiseta_2012_b.jpg" />
+    <Content Include="images\camisetas\flags\argentina.png" />
+    <Content Include="images\camisetas\flags\brazil.png" />
+    <Content Include="images\camisetas\flags\colombia.png" />
+    <Content Include="images\camisetas\flags\paraguay.png" />
+    <Content Include="images\camisetas\xentenario.png" />
+    <Content Include="images\daniel_angelici.jpg" />
+    <Content Include="images\escudos.png" />
+    <Content Include="images\Estadio_Boca_Juniors_1929.jpg" />
+    <Content Include="images\historia\Boca_1925b.jpg" />
+    <Content Include="images\historia\Boca_1977.jpg" />
+    <Content Include="images\historia\Boca_1977b.jpg" />
+    <Content Include="images\historia\Boca_1981.jpg" />
+    <Content Include="images\historia\Boca_1954.jpg" />
+    <Content Include="images\historia\Boca_1.jpg" />
+    <Content Include="images\historia\Boca_1919b.jpg" />
+    <Content Include="images\historia\Boca_1919.jpg" />
+    <Content Include="images\historia\Boca_1935.jpg" />
+    <Content Include="images\historia\Boca_1940.jpg" />
+    <Content Include="images\historia\Boca_1944.jpg" />
+    <Content Include="images\historia\Boca_1965.jpg" />
+    <Content Include="images\historia\Boca_1976.jpg" />
+    <Content Include="images\historia\Boca_1925.jpg" />
+    <Content Include="images\historia\Boca_1992.jpg" />
+    <Content Include="images\historia\Boca_1993.jpg" />
+    <Content Include="images\historia\Boca_1995.jpg" />
+    <Content Include="images\historia\Boca_1996.jpg" />
+    <Content Include="images\historia\Boca_1997.jpg" />
+    <Content Include="images\historia\Boca_1998.jpg" />
+    <Content Include="images\historia\Boca_1998_1999.jpg" />
+    <Content Include="images\historia\Boca_2000_2001.jpg" />
+    <Content Include="images\historia\Boca_2003.jpg" />
+    <Content Include="images\historia\Boca_2005.jpg" />
+    <Content Include="images\historia\Boca_2007.jpg" />
+    <Content Include="images\historia\Boca_2008.jpg" />
+    <Content Include="images\historia\Boca_2009.jpg" />
+    <Content Include="images\historia\Boca_2010.jpg" />
+    <Content Include="images\historia\Boca_2011.jpg" />
+    <Content Include="images\historia\Boca_2011b.jpg" />
+    <Content Include="images\historia\Boca_2012.jpg" />
+    <Content Include="images\historia\Boca_h1.jpg" />
+    <Content Include="images\historia\Boca_h2.jpg" />
+    <Content Include="images\historia\Boca_h3.jpg" />
+    <Content Include="images\historia\Boca_h4.jpg" />
+    <Content Include="images\historia\Boca_h5.jpg" />
+    <Content Include="images\home\bombonera.scale-140.png" />
+    <Content Include="images\home\bombonera.scale-180.png" />
+    <Content Include="images\home\bombonera.scale-100.png" />
+    <Content Include="images\home\camisetas.scale-100.png" />
+    <Content Include="images\home\camisetas.scale-140.png" />
+    <Content Include="images\home\camisetas.scale-180.png" />
+    <Content Include="images\home\comision.scale-100.png" />
+    <Content Include="images\home\comision.scale-140.png" />
+    <Content Include="images\home\comision.scale-180.png" />
+    <Content Include="images\home\equipos.scale-100.png" />
+    <Content Include="images\home\equipos.scale-140.png" />
+    <Content Include="images\home\equipos.scale-180.png" />
+    <Content Include="images\home\historia.scale-100.png" />
+    <Content Include="images\home\historia.scale-140.png" />
+    <Content Include="images\home\historia.scale-180.png" />
+    <Content Include="images\home\noticias.scale-100.png" />
+    <Content Include="images\home\noticias.scale-140.png" />
+    <Content Include="images\home\noticias.scale-180.png" />
+    <Content Include="images\home\socios.scale-100.png" />
+    <Content Include="images\home\socios.scale-140.png" />
+    <Content Include="images\home\socios.scale-180.png" />
+    <Content Include="images\La_Bombonera_en_construcción.jpg" />
+    <Content Include="images\logo.scale-100.png" />
+    <Content Include="images\logo.scale-140.png" />
+    <Content Include="images\logo.scale-180.png" />
+    <Content Include="images\logo.scale-80.png" />
+    <Content Include="images\mapa-estadio.png" />
+    <Content Include="images\mapa-acceso-estadio.jpg" />
+    <Content Include="images\smalllogo.scale-100.png" />
+    <Content Include="images\smalllogo.scale-140.png" />
+    <Content Include="images\smalllogo.scale-180.png" />
+    <Content Include="images\smalllogo.scale-80.png" />
+    <Content Include="images\splashscreen.scale-100.png" />
+    <Content Include="images\splashscreen.scale-140.png" />
+    <Content Include="images\splashscreen.scale-180.png" />
+    <Content Include="images\storelogo.scale-100.png" />
+    <Content Include="images\storelogo.scale-140.png" />
+    <Content Include="images\storelogo.scale-180.png" />
+    <Content Include="images\wallpaper_113_1600_x_1200.jpg" />
+    <Content Include="images\tribuna12.jpg" />
+    <Content Include="images\widelogo.scale-100.png" />
+    <Content Include="images\widelogo.scale-140.png" />
+    <Content Include="images\widelogo.scale-180.png" />
+    <Content Include="images\widelogo.scale-80.png" />
+    <Content Include="js\data.js" />
+    <Content Include="js\default.js" />
+    <Content Include="css\default.css" />
+    <Content Include="js\jquery-1.8.3.min.js" />
+    <Content Include="js\navigator.js" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="pages\about.html" />
+    <Content Include="pages\historiaCamisetas\historiaCamisetas.css" />
+    <Content Include="pages\historiaCamisetas\historiaCamisetas.html" />
+    <Content Include="pages\historiaCamisetas\historiaCamisetas.js" />
+    <Content Include="pages\historia\historia.css" />
+    <Content Include="pages\historia\historia.html" />
+    <Content Include="pages\historia\historia.js" />
+    <Content Include="pages\groupDetail\groupDetail.css" />
+    <Content Include="pages\groupDetail\groupDetail.html" />
+    <Content Include="pages\groupDetail\groupDetail.js" />
+    <Content Include="pages\groupedItems\groupedItems.css" />
+    <Content Include="pages\groupedItems\groupedItems.html" />
+    <Content Include="pages\groupedItems\groupedItems.js" />
+    <Content Include="pages\comisionDirectiva\comisionDirectiva.css" />
+    <Content Include="pages\comisionDirectiva\comisionDirectiva.html" />
+    <Content Include="pages\comisionDirectiva\comisionDirectiva.js" />
+    <Content Include="pages\historiaEquipos\historiaEquipos.css" />
+    <Content Include="pages\historiaEquipos\historiaEquipos.html" />
+    <Content Include="pages\historiaEquipos\historiaEquipos.js" />
+    <Content Include="pages\informacionSocios\informacionSocios.css" />
+    <Content Include="pages\informacionSocios\informacionSocios.html" />
+    <Content Include="pages\informacionSocios\informacionSocios.js" />
+    <Content Include="pages\laBombonera\laBombonera.css" />
+    <Content Include="pages\laBombonera\laBombonera.html" />
+    <Content Include="pages\laBombonera\laBombonera.js" />
+    <Content Include="pages\home\home.css" />
+    <Content Include="pages\home\home.html" />
+    <Content Include="pages\home\home.js" />
+    <Content Include="pages\itemDetail\itemDetail.css" />
+    <Content Include="pages\itemDetail\itemDetail.html" />
+    <Content Include="pages\itemDetail\itemDetail.js" />
+    <Content Include="pages\searchResults\searchResults.css" />
+    <Content Include="pages\searchResults\searchResults.html" />
+    <Content Include="pages\searchResults\searchResults.js" />
+    <None Include="ClubAtleticoBocaJuniors_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
