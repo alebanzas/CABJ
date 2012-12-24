@@ -42,12 +42,12 @@
             var result = content.cloneNode(true);
 
             // For the first item, use the largest template.
-            if (currentItem.data.postIndex == 0) {
-	            result.className = "largeitemtemplate";
-            }
-            else {
+            //if (currentItem.data.postIndex == 0) {
+	        //    result.className = "largeitemtemplate";
+            //}
+            //else {
 	            result.className = "mediumitemtemplate";
-            }
+            //}
             // Because we used a WinJS template, we need to strip off some attributes 
             // for it to render.
             result.attributes.removeNamedItem("data-win-control");
@@ -171,7 +171,7 @@
                     listView.addEventListener("contentanimating", handler, false);
                     this._initializeLayout(listView, listViewZoomOut, semanticZoom, viewState, itemTemplate);
 
-                    appbar.winControl.hideCommands([markItem]);
+                    //appbar.winControl.hideCommands([markItem]);
                     if (viewState === appViewState.snapped) {
                         listView.selectionMode = "none";
                         semanticZoom.zoomedOut = true;
