@@ -52,21 +52,16 @@
             Data.refresh();
 
             var listView = element.querySelector(".groupeditemslist").winControl;
-            var listViewZoomOut = element.querySelector(".groupeditemslistZoomOut").winControl;
-            var semanticZoom = element.querySelector(".sezoDiv").winControl;
             var itemTemplate = element.querySelector(".itemtemplate");
 
-            this.bindControls(listView, listViewZoomOut, element, options);
+            this.bindControls(listView, element, options);
 
-            this._initializeLayout(listView, listViewZoomOut, semanticZoom, appView.value, itemTemplate);
+            this._initializeLayout(listView, appView.value, itemTemplate);
 
             listView.element.focus();
         },
 
-        bindControls: function (listView, listViewZoomOut, element, options) {
-
-            listViewZoomOut.itemTemplate = element.querySelector(".itemtemplate"); //TODO: Modify to use a different template
-            listViewZoomOut.oniteminvoked = this.groupInvoked.bind(this);          //TODO: Tomar decision respecto del uso de grupos
+        bindControls: function (listView, element, options) {
 
             listView.groupHeaderTemplate = element.querySelector(".headertemplate");
             listView.itemTemplate = element.querySelector(".itemtemplate");
@@ -129,7 +124,7 @@
         },
 
         // This function updates the ListView with new layouts
-        _initializeLayout: function (listView, listViewZoomOut, semanticZoom, viewState, itemTemplate) {
+        _initializeLayout: function (listView, viewState, itemTemplate) {
             /// <param name="listView" value="WinJS.UI.ListView.prototype" />
 
             if (viewState === appViewState.snapped) {
@@ -138,20 +133,11 @@
                 listView.itemTemplate = itemTemplate;
 
                 listView.layout = new ui.ListLayout();
-
-                semanticZoom.zoomedOut = false;
-                semanticZoom.forceLayout();
-                semanticZoom.locked = true;
             } else {
                 listView.itemDataSource = Data.items.dataSource;
                 listView.groupDataSource = Data.groups.dataSource;
                 listView.itemTemplate = multisizeItemTemplateRenderer;
                 listView.layout = new ui.GridLayout({ groupInfo: groupInfo, groupHeaderPosition: "top" });
-
-                listViewZoomOut.itemDataSource = Data.groups.dataSource; // TODO: Modify to use a different Data Source
-                listViewZoomOut.layout = new ui.GridLayout({ maxRows: 1 });
-                semanticZoom.forceLayout();
-                semanticZoom.locked = false;
             }
         },
 
