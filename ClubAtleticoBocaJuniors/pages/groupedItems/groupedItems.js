@@ -39,12 +39,6 @@
     }
 
     ui.Pages.define("/pages/groupedItems/groupedItems.html", {
-        // Navigates to the groupHeaderPage. Called from the groupHeaders,
-        // keyboard shortcut and iteminvoked.
-        navigateToGroup: function (key) {
-            nav.navigate("/pages/groupDetail/groupDetail.html", { groupKey: key });
-        },
-
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
@@ -66,17 +60,6 @@
             listView.groupHeaderTemplate = element.querySelector(".headertemplate");
             listView.itemTemplate = element.querySelector(".itemtemplate");
             listView.oniteminvoked = this._itemInvoked.bind(this);
-
-            // Set up a keyboard shortcut (ctrl + alt + g) to navigate to the
-            // current group when not in snapped mode.
-            listView.addEventListener("keydown", function (e) {
-                if (appView.value !== appViewState.snapped && e.ctrlKey && e.keyCode === WinJS.Utilities.Key.g && e.altKey) {
-                    var data = listView.itemDataSource.list.getAt(listView.currentItem.index);
-                    this.navigateToGroup(data.group.key);
-                    e.preventDefault();
-                    e.stopImmediatePropagation();
-                }
-            }.bind(this), true);
         },
 
         groupInvoked: function (args) {
