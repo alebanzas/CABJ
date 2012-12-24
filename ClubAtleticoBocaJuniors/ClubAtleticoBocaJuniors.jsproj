@@ -210,8 +210,11 @@
     <Content Include="images\splashscreen.scale-180.png" />
     <Content Include="images\storelogo.png" />
     <Content Include="images\wallpaper_113_1600_x_1200.jpg" />
-    <Content Include="images\widelogo.png" />
     <Content Include="images\tribuna12.jpg" />
+    <Content Include="images\widelogo.scale-100.png" />
+    <Content Include="images\widelogo.scale-140.png" />
+    <Content Include="images\widelogo.scale-180.png" />
+    <Content Include="images\widelogo.scale-80.png" />
     <Content Include="js\data.js" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
