@@ -47,16 +47,6 @@
             display: inline-block;
         }
 
-        .groupeditemspage .groupeditemslist .group-header .group-chevron {
-            -ms-grid-column: 3;
-            display: inline-block;
-        }
-
-            .groupeditemspage .groupeditemslist .group-header .group-chevron::before {
-                content: "\E26B";
-                font-family: 'Segoe UI Symbol';
-            }
-
         .groupeditemspage .groupeditemslist .item .item-image {
             -ms-grid-row-span: 2;
         }

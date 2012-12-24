@@ -62,12 +62,6 @@
             listView.oniteminvoked = this._itemInvoked.bind(this);
         },
 
-        groupInvoked: function (args) {
-            var group = Data.groups.getAt(args.detail.itemIndex);
-            nav.navigate("/pages/groupDetail/groupDetail.html", { groupKey: group.key });
-        },
-
-
         // This function provides the Elements to be animated by PageControlNavigator on Navigation.
         getAnimationElements: function () {
             return [[this.element.querySelector("header")], [this.element.querySelector("section")]];
