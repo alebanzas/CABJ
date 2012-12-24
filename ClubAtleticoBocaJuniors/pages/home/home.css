@@ -332,4 +332,124 @@
 
 @media screen and (-ms-view-state: snapped) {
 
+	#scrollContainer {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-ms-overflow-style: scrollbar;
+		padding-left: 40px;
+	}
+
+	.contentBox {
+		-ms-grid-rows: 100px 100px 100px 100px 100px 100px 100px;
+		-ms-grid-columns: 1fr;
+	}
+
+		.contentBox h4 {
+			text-align: left;
+		}
+
+	/* Layout */
+
+	#historia {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+
+	#historiaEquipos {
+		-ms-grid-row: 2;
+		-ms-grid-column: 1;
+	}
+
+	#historiaCamisetas {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+
+	#laBombonera {
+		-ms-grid-row: 4;
+		-ms-grid-column: 1;
+	}
+
+	#noticias {
+		-ms-grid-row: 5;
+		-ms-grid-column: 1;
+	}
+
+	#comisionDirectiva {
+		-ms-grid-row: 6;
+		-ms-grid-column: 1;
+	}
+
+	#informacionSocios {
+		-ms-grid-row: 7;
+		-ms-grid-column: 1;
+	}
+
+	.backgroundImage {
+		display: none;
+	}
+
+	.square, .bigSquare, .wide {
+		height: 70px;
+		width: 220px;
+		margin: 10px;
+		padding: 0;
+	}
+
+	.wide {
+		-ms-grid-column-span: 1;
+		-ms-grid-columns: 1fr;
+	}
+
+		.wide .wedge {
+			-ms-grid-column: 1;
+			-ms-grid-columns: 1fr;
+		}
+
+			.wide .wedge .diagonal {
+				display: none;
+			}
+
+			.wide .wedge h4 {
+				-ms-grid-column: 1;
+				padding: 20px;
+				height: 30px;
+				width: 180px;
+			}
+
+	.square {
+		-ms-grid-rows: 1fr;
+	}
+
+		.square .stripe {
+			-ms-grid-row: 1;
+			-ms-grid-columns: 1fr;
+		}
+
+			.square .stripe h4 {
+				-ms-grid-column: 1;
+				padding: 20px;
+				height: 30px;
+				width: 180px;
+			}
+
+			.square .stripe .diagonal {
+				display: none;
+			}
+
+	.bigSquare {
+		-ms-grid-rowspan: 1;
+		-ms-grid-rows: 1fr;
+	}
+	
+		.bigSquare .stripe .diagonal {
+			display: none;
+		}
+
+		.bigSquare .stripe h4 {
+			-ms-grid-column: 1;
+			padding: 20px;
+			height: 30px;
+			width: 180px;
+		}
 }
