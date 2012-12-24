@@ -187,19 +187,21 @@
 
             // Avoid duplication if the user refreshes the data
             if (resolveItemReference([feed.key, postTitle]) == undefined) {
-                if (feed.itemsName == "entry") {
-                    var postAuthor = post.querySelector("author > name").textContent;
-
-                    if (post.querySelector("published") != null)
-                        var pds = post.querySelector("published").textContent;
-                    else if (post.querySelector("updated") != null)
-                        var pds = post.querySelector("updated").textContent;
-
-                    var postDate = pds.substring(5, 7) + "-" + pds.substring(8, 10)
-                        + "-" + pds.substring(0, 4);
-
-                    var imageUrl;
-                    if (post.querySelector("thumbnail") != null)
+	            var postAuthor;
+	            var pds;
+	            var postDate;
+	            var imageUrl;
+	            var staticContent;
+	            if (feed.itemsName == "entry") {
+		            postAuthor = post.querySelector("author > name").textContent;
+		            if (post.querySelector("published") != null) {
+			            pds = post.querySelector("published").textContent;
+		            } else if (post.querySelector("updated") != null) {
+			            pds = post.querySelector("updated").textContent;
+		            }
+		            postDate = pds.substring(5, 7) + "-" + pds.substring(8, 10)
+			            + "-" + pds.substring(0, 4);
+		            if (post.querySelector("thumbnail") != null)
                         imageUrl = post.querySelector("thumbnail").attributes.url.value;
                     else if (post.querySelector("img") != null)
                         imageUrl = post.querySelector("img").attributes.src.value;
@@ -209,17 +211,13 @@
                         imageUrl = feed.logoUrl;
 
                     // Process the content so that it displays nicely.
-                    var staticContent = toStaticHTML(post.querySelector(
-                        contentTag).textContent);
-                } else if (feed.itemsName == "item") {
-                    var postAuthor = feed.title;
-
-                    var pds = post.querySelector("pubDate").textContent;
-                    var postDate = pds.substring(5, 7) + "-" + pds.substring(8, 11) + "-" + pds.substring(12, 16);
-
-                    var imageUrl;
-                    
-                    if (post.querySelector("enclosure") != null)
+		            staticContent = toStaticHTML(post.querySelector(
+			            contentTag).textContent);
+	            } else if (feed.itemsName == "item") {
+		            postAuthor = feed.title;
+		            pds = post.querySelector("pubDate").textContent;
+		            postDate = pds.substring(5, 7) + "-" + pds.substring(8, 11) + "-" + pds.substring(12, 16);
+		            if (post.querySelector("enclosure") != null)
                         imageUrl = post.querySelector("enclosure").attributes.url.value;
                     else if (post.querySelector("img") != null)
                         imageUrl = post.querySelector("img").attributes.src.value;
@@ -229,9 +227,9 @@
                         imageUrl = feed.logoUrl;
 
                     // Process the content so that it displays nicely.
-                    var staticContent = toStaticHTML(post.querySelector(
-                        contentTag).textContent);
-                }
+		            staticContent = toStaticHTML(post.querySelector(
+			            contentTag).textContent);
+	            }
 
                 // Store the post info we care about in the array.
                 blogPosts.push({
