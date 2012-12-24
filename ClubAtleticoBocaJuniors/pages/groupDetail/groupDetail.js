@@ -12,8 +12,6 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
 
-            this.setAppBarCommands("group1");
-
             var listView = element.querySelector(".itemslist").winControl;
             
             this.bindControls(listView, element, options);
@@ -21,13 +19,6 @@
             this._initializeLayout(listView, Windows.UI.ViewManagement.ApplicationView.value);
 
             listView.element.focus();
-        },
-
-        setAppBarCommands: function (groupKey) {
-            appbar.winControl.disabled = false;
-            appbar.winControl.hideCommands([markItem]);
-            appbar.winControl.showCommands([pinGroup]);
-            MyAppBar.setPinButton(groupKey);
         },
 
         bindControls: function (listView, element, options) {
