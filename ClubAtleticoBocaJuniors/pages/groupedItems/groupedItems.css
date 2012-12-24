@@ -136,8 +136,8 @@
 
 .groupeditemspage .mediumitemtemplate .item
 {
-    width: 600px;
-    height: 300px;
+    width: 300px;
+    height: 150px;
     -ms-grid-columns: 1fr;
     -ms-grid-rows: 1fr 60px;
     display: -ms-grid;
