@@ -6,34 +6,6 @@
     var nav = WinJS.Navigation;
     var ui = WinJS.UI;
 
-    function showAppBar() {
-        // Get the app bar.
-        var element = document.activeElement;
-        var appbar = document.getElementById("appbar");
-
-        // Keep the app bar open after it's shown.
-        appbar.winControl.sticky = true;
-
-        // Set the app bar context.
-        appbar.winControl.showCommands([markItem]);
-
-        // Show the app bar.
-        appbar.winControl.show();
-
-        // Return focus to the original item which invoked the app bar.
-        if (element != null) element.focus();
-    };
-
-    function hideAppBar() {
-        // Get the app bar.
-        var element = document.activeElement;
-        var appbar = document.getElementById("appbar");
-
-        appbar.winControl.sticky = false;
-        appbar.winControl.hideCommands([markItem]);
-        if (element != null) element.focus();
-    };
-
     function multisizeItemTemplateRenderer(itemPromise) {
         return itemPromise.then(function (currentItem) {
             var content;
@@ -82,8 +54,6 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
 
-            this.setAppBarCommands();
-
             Data.refresh();
 
             var listView = element.querySelector(".groupeditemslist").winControl;
@@ -98,12 +68,6 @@
             listView.element.focus();
         },
 
-        setAppBarCommands: function () {
-            //appbar.winControl.disabled = false;
-            //appbar.winControl.hideCommands([markItem]); // will always show on items selection
-            //appbar.winControl.hideCommands([pinGroup]);
-        },
-
         bindControls: function (listView, listViewZoomOut, element, options) {
 
             listViewZoomOut.itemTemplate = element.querySelector(".itemtemplate"); //TODO: Modify to use a different template
@@ -112,7 +76,6 @@
             listView.groupHeaderTemplate = element.querySelector(".headertemplate");
             listView.itemTemplate = element.querySelector(".itemtemplate");
             listView.oniteminvoked = this._itemInvoked.bind(this);
-            listView.onselectionchanged = this.itemSelected.bind(this);
 
             // Set up a keyboard shortcut (ctrl + alt + g) to navigate to the
             // current group when not in snapped mode.
@@ -136,20 +99,6 @@
         getAnimationElements: function () {
             return [[this.element.querySelector("header")], [this.element.querySelector("section")]];
         },
-
-        itemSelected: function (eventObject, that) {
-            var listView = document.querySelector(".groupeditemslist").winControl;
-
-            // Check for selection.
-            if (listView.selection.count() === 0) {
-                hideAppBar();
-            } else {
-                listView.selection.getItems().then(function (items) {
-                    showAppBar();
-                });
-            }
-        },
-
 
         // This function updates the page layout in response to viewState changes.
         updateLayout: function (element, viewState, lastViewState) {
