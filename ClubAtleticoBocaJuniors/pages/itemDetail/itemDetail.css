@@ -80,6 +80,11 @@
             .itemdetailpage .content article .item-content {
                 padding-bottom: 60px;
             }
+
+			.itemdetailpage .content article img {
+                height: 140px;
+                width: 280px;
+            }
 }
 
 @media screen and (-ms-view-state: fullscreen-portrait) {
