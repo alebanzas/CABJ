@@ -94,9 +94,9 @@
             /// <param name="listView" value="WinJS.UI.ListView.prototype" />
 
             if (viewState === appViewState.snapped) {
-                listView.itemDataSource = Data.groups.dataSource;
+                listView.itemDataSource = Data.items.dataSource;
                 listView.groupDataSource = null;
-                listView.itemTemplate = itemTemplate;
+                listView.itemTemplate = multisizeItemTemplateRenderer;
 
                 listView.layout = new ui.ListLayout();
             } else {
@@ -108,15 +108,8 @@
         },
 
         _itemInvoked: function (args) {
-            if (appView.value === appViewState.snapped) {
-                // If the page is snapped, the user invoked a group.
-                var group = Data.groups.getAt(args.detail.itemIndex);
-                this.navigateToGroup(group.key);
-            } else {
-                // If the page is not snapped, the user invoked an item.
-                var item = Data.items.getAt(args.detail.itemIndex);
-                nav.navigate("/pages/itemDetail/itemDetail.html", { item: Data.getItemReference(item) });
-            }
+            var item = Data.items.getAt(args.detail.itemIndex);
+            nav.navigate("/pages/itemDetail/itemDetail.html", { item: Data.getItemReference(item) });
         }
     });
 })();
