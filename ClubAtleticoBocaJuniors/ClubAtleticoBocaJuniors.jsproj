@@ -145,6 +145,8 @@
     <Content Include="images\Estadio_Boca_Juniors_1929.jpg" />
     <Content Include="images\historia\Boca_1925b.jpg" />
     <Content Include="images\historia\Boca_1949.jpg" />
+    <Content Include="images\historia\Boca_1969.jpg" />
+    <Content Include="images\historia\Boca_1970.jpg" />
     <Content Include="images\historia\Boca_1972.jpg" />
     <Content Include="images\historia\Boca_1973.jpg" />
     <Content Include="images\historia\Boca_1974.jpg" />
@@ -184,6 +186,7 @@
     <Content Include="images\historia\Boca_2005.jpg" />
     <Content Include="images\historia\Boca_2007.jpg" />
     <Content Include="images\historia\Boca_2008.jpg" />
+    <Content Include="images\historia\Boca_2008b.jpg" />
     <Content Include="images\historia\Boca_2009.jpg" />
     <Content Include="images\historia\Boca_2010.jpg" />
     <Content Include="images\historia\Boca_2011.jpg" />
