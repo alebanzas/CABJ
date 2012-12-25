@@ -1,0 +1,455 @@
+﻿.homepage section[role=main] {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+}
+
+#scrollContainer {
+	height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: scrollbar;
+	padding-left: 120px;
+}
+
+.contentBox {
+	display: -ms-grid;
+	-ms-grid-rows: 270px 270px;
+	-ms-grid-columns: 270px 270px 540px 270px 270px 120px; /* La última columna es sólo margen */
+}
+
+/* Esta truchada está para que tenga margen a la derecha, sino no me daba bola */
+.contentBox:after {
+	-ms-grid-column: 6;
+	content: '';
+	display: block;
+}
+
+	.contentBox h4 {
+		font-size: 14pt;
+		font-weight: bold;
+		text-align: right;
+	}
+
+/* Layout */
+
+#historia {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+
+#historiaEquipos {
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+}
+
+#historiaCamisetas {
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+}
+
+#laBombonera {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+}
+
+#noticias {
+	-ms-grid-row: 1;
+	-ms-grid-column: 4;
+}
+
+#comisionDirectiva {
+	-ms-grid-row: 2;
+	-ms-grid-column: 4;
+}
+
+#informacionSocios {
+	-ms-grid-row: 2;
+	-ms-grid-column: 5;
+}
+
+.wide {
+	height: 250px;
+	width: 520px;
+	-ms-grid-column-span: 2;
+	margin: 10px;
+	display: -ms-grid;
+	-ms-grid-rows: 1fr;
+	-ms-grid-columns: 1fr 170px;
+}
+
+	.wide .backgroundImage img {
+		-ms-grid-column-span: 2;
+		height: 250px;
+		width: 520px;
+	}
+
+
+	.wide .wedge {
+		-ms-grid-column: 2;
+		display: -ms-grid;
+		-ms-grid-columns: 1fr 120px;
+	}
+
+		.wide .wedge .diagonal {
+			content: ' ';
+			-ms-grid-column: 1;
+			display: block;
+			border-top: 250px solid transparent;
+			border-right: 50px solid #ffbe00;
+		}
+
+		.wide .wedge h4 {
+			-ms-grid-column: 2;
+			padding: 210px 20px 0;
+			height: 40px;
+			width: 80px;
+		}
+
+.square {
+	height: 250px;
+	width: 250px;
+	margin: 10px;
+	display: -ms-grid;
+	-ms-grid-rows: 1fr 50px;
+}
+
+	.square .backgroundImage img {
+		-ms-grid-row-span: 2;
+		height: 250px;
+		width: 250px;
+	}
+
+	.square .stripe {
+		-ms-grid-row: 2;
+		display: -ms-grid;
+		-ms-grid-columns: 1fr 200px;
+	}
+
+		.square .stripe h4 {
+			-ms-grid-column: 2;
+			height: 30px;
+			width: 180px;
+			padding: 10px 20px 10px 0;
+		}
+
+		.square .stripe .diagonal {
+			-ms-grid-column: 1;
+			content: '';
+			border-top: 50px solid transparent;
+			border-right: 20px solid #ffbe00;
+		}
+
+.bigSquare {
+	height: 520px;
+	width: 520px;
+	-ms-grid-row-span: 2;
+	margin: 10px;
+	display: -ms-grid;
+	-ms-grid-rows: 1fr 100px;
+}
+
+	.bigSquare .backgroundImage img {
+		height: 520px;
+		width: 520px;
+	}
+
+	.bigSquare .stripe {
+		-ms-grid-row: 2;
+		display: -ms-grid;
+		-ms-grid-columns: 1fr 440px;
+	}
+
+		.bigSquare .stripe .diagonal {
+			-ms-grid-column: 1;
+			content: '';
+			border-top: 100px solid transparent;
+			border-right: 40px solid #ffbe00;
+		}
+
+		.bigSquare .stripe h4 {
+			-ms-grid-column: 2;
+			height: 30px;
+			width: 400px;
+			padding: 35px 20px;
+		}
+
+.yellow h4 {
+	color: #282b4a;
+	background-color: #ffbe00;
+}
+
+@media screen and (min-device-height: 1000px) {
+	.contentBox {
+		display: -ms-grid;
+		-ms-grid-rows: 270px 270px 270px;
+		-ms-grid-columns: 270px 270px 270px 270px 120px; /* La última columna es sólo margen */
+	}
+
+	/* Esta truchada está para que tenga margen a la derecha, sino no me daba bola */
+	.contentBox:after {
+		-ms-grid-column: 5;
+		content: '';
+		display: block;
+	}
+
+	/* Layout */
+
+	#laBombonera {
+		-ms-grid-row: 1;
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 2;
+	}
+
+	#noticias {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+
+	#comisionDirectiva {
+		-ms-grid-row: 3;
+		-ms-grid-column: 3;
+	}
+
+	#informacionSocios {
+		-ms-grid-row: 3;
+		-ms-grid-column: 4;
+	}
+}
+
+@media screen and (min-device-height: 1270px) {
+	.contentBox {
+		display: -ms-grid;
+		-ms-grid-rows: 270px 270px 540px;
+		-ms-grid-columns: 270px 270px 270px 270px 120px; /* La última columna es sólo margen */
+	}
+
+	/* Esta truchada está para que tenga margen a la derecha, sino no me daba bola */
+	.contentBox:after {
+		-ms-grid-column: 5;
+		content: '';
+		display: block;
+	}
+
+	/* Layout */
+
+	#laBombonera {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+	}
+
+	#noticias {
+		-ms-grid-row: 1;
+		-ms-grid-column: 3;
+	}
+
+	#comisionDirectiva {
+		-ms-grid-row: 2;
+		-ms-grid-column: 3;
+	}
+
+	#informacionSocios {
+		-ms-grid-row: 2;
+		-ms-grid-column: 4;
+	}
+}
+
+@media screen and (min-device-height: 1540px) {
+	.contentBox {
+		display: -ms-grid;
+		-ms-grid-rows: 270px 270px 540px 270px;
+		-ms-grid-columns: 270px 270px 270px 270px 120px; /* La última columna es sólo margen */
+	}
+
+	/* Esta truchada está para que tenga margen a la derecha, sino no me daba bola */
+	.contentBox:after {
+		-ms-grid-column: 5;
+		content: '';
+		display: block;
+	}
+
+	/* Layout */
+
+	#laBombonera {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+	}
+
+	#noticias {
+		-ms-grid-row: 4;
+		-ms-grid-column: 1;
+	}
+
+	#comisionDirectiva {
+		-ms-grid-row: 1;
+		-ms-grid-column: 3;
+	}
+
+	#informacionSocios {
+		-ms-grid-row: 1;
+		-ms-grid-column: 4;
+	}
+}
+
+@media screen and (min-device-height: 1810px) {
+	.contentBox {
+		display: -ms-grid;
+		-ms-grid-rows: 270px 270px 540px 270px 270px;
+		-ms-grid-columns: 270px 270px 120px; /* La última columna es sólo margen */
+	}
+
+	/* Esta truchada está para que tenga margen a la derecha, sino no me daba bola */
+	.contentBox:after {
+		-ms-grid-column: 3;
+		content: '';
+		display: block;
+	}
+
+	/* Layout */
+
+	#laBombonera {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+	}
+
+	#noticias {
+		-ms-grid-row: 4;
+		-ms-grid-column: 1;
+	}
+
+	#comisionDirectiva {
+		-ms-grid-row: 5;
+		-ms-grid-column: 1;
+	}
+
+	#informacionSocios {
+		-ms-grid-row: 5;
+		-ms-grid-column: 2;
+	}
+}
+
+@media screen and (-ms-view-state: snapped) {
+
+	#scrollContainer {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		-ms-overflow-style: scrollbar;
+		padding-left: 40px;
+	}
+
+	.contentBox {
+		-ms-grid-rows: 100px 100px 100px 100px 100px 100px 100px;
+		-ms-grid-columns: 1fr;
+	}
+
+		.contentBox h4 {
+			text-align: left;
+		}
+
+	/* Layout */
+
+	#historia {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+
+	#historiaEquipos {
+		-ms-grid-row: 2;
+		-ms-grid-column: 1;
+	}
+
+	#historiaCamisetas {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+
+	#laBombonera {
+		-ms-grid-row: 4;
+		-ms-grid-column: 1;
+	}
+
+	#noticias {
+		-ms-grid-row: 5;
+		-ms-grid-column: 1;
+	}
+
+	#comisionDirectiva {
+		-ms-grid-row: 6;
+		-ms-grid-column: 1;
+	}
+
+	#informacionSocios {
+		-ms-grid-row: 7;
+		-ms-grid-column: 1;
+	}
+
+	.backgroundImage {
+		display: none;
+	}
+
+	.square, .bigSquare, .wide {
+		height: 70px;
+		width: 220px;
+		margin: 10px;
+		padding: 0;
+	}
+
+	.wide {
+		-ms-grid-column-span: 1;
+		-ms-grid-columns: 1fr;
+	}
+
+		.wide .wedge {
+			-ms-grid-column: 1;
+			-ms-grid-columns: 1fr;
+		}
+
+			.wide .wedge .diagonal {
+				display: none;
+			}
+
+			.wide .wedge h4 {
+				-ms-grid-column: 1;
+				padding: 20px;
+				height: 30px;
+				width: 180px;
+			}
+
+	.square {
+		-ms-grid-rows: 1fr;
+	}
+
+		.square .stripe {
+			-ms-grid-row: 1;
+			-ms-grid-columns: 1fr;
+		}
+
+			.square .stripe h4 {
+				-ms-grid-column: 1;
+				padding: 20px;
+				height: 30px;
+				width: 180px;
+			}
+
+			.square .stripe .diagonal {
+				display: none;
+			}
+
+	.bigSquare {
+		-ms-grid-rowspan: 1;
+		-ms-grid-rows: 1fr;
+	}
+	
+		.bigSquare .stripe .diagonal {
+			display: none;
+		}
+
+		.bigSquare .stripe h4 {
+			-ms-grid-column: 1;
+			padding: 20px;
+			height: 30px;
+			width: 180px;
+		}
+}
