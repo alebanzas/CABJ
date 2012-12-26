@@ -43,6 +43,10 @@
         padding: 0;
     }
 
+		.groupeditemspage .groupeditemslist.win-listview .win-container:hover {
+			outline-color: #ffbe00;
+		}
+
         .groupeditemspage .groupeditemslist .group-header .group-title {
             display: inline-block;
         }
@@ -110,7 +114,7 @@
     height: 150px;
     overflow: hidden;
     -ms-grid-columns: 1fr;
-    -ms-grid-rows: 0px 1fr;
+    -ms-grid-rows: 0 1fr;
     display: -ms-grid;
 }
 
@@ -129,7 +133,7 @@
     width: 300px;
     height: 150px;
     -ms-grid-columns: 1fr;
-    -ms-grid-rows: 1fr 60px;
+    -ms-grid-rows: 1fr 40px;
     display: -ms-grid;
     overflow: hidden;
 }       
@@ -166,70 +170,71 @@
 }
 
 @media screen and (-ms-view-state: snapped) {
-    .groupeditemspage section[role=main] {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 1;
-    }
+.groupeditemspage {
+    /* Change the display type to have only one row */
+    -ms-grid-rows: 128px 1fr;
+    display: -ms-grid;
+}
 
-    .groupeditemspage .groupeditemslist .win-vertical.win-viewport .win-surface {
-        margin-bottom: 30px;
-        margin-top: 0;
-    }
+	.groupeditemspage header[role=banner] {
+		-ms-grid-columns: auto 1fr;
+		margin-left: 20px;
+	}
+	
+	.groupeditemspage section[role=main] {
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 1;
+	}
 
-    .groupeditemspage .groupeditemslist .win-container {
-        margin-bottom: 15px;
-        margin-left: 13px;
-        margin-right: 35px;
-        padding: 7px;
-    }
+	.groupeditemspage .groupeditemslist .win-vertical.win-viewport .win-surface {
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
 
-    .groupeditemspage .groupeditemslist .item {
-        -ms-grid-columns: 60px 1fr;
-        -ms-grid-rows: 1fr;
-        display: -ms-grid;
-        height: 60px;
-        width: 272px;
-    }
+	.groupeditemspage .groupeditemslist .win-container {
+		margin-bottom: 15px;
+		margin-left: 13px;
+		margin-right: 45px;
+		padding: 7px;
+	}
 
-        .groupeditemspage .groupeditemslist .item .item-image {
-            -ms-grid-column: 1;
-            -ms-grid-row-span: 1;
-            height: 60px;
-            width: 60px;
-        }
+	.groupeditemspage .groupeditemslist .item {
+		-ms-grid-columns: 120px 1fr;
+		-ms-grid-rows: 1fr;
+		display: -ms-grid;
+		height: 60px;
+		width: 260px;
+	}
 
-        .groupeditemspage .groupeditemslist .item .item-overlay {
-            -ms-grid-column: 2;
-            -ms-grid-row: 1;
-            -ms-grid-row-align: stretch;
-            background: transparent;
-            display: inline-block;
-            margin-left: 10px;
-            padding: 0;
-        }
+		.groupeditemspage .groupeditemslist .item .item-image {
+			-ms-grid-column: 1;
+			-ms-grid-row-span: 1;
+			height: 60px;
+			width: 120px;
+		}
 
-            .groupeditemspage .groupeditemslist .item .item-overlay .item-title {
-                margin-top: 4px;
-                max-height: 40px;
-                width: 202px;
-            }
+		.groupeditemspage .groupeditemslist .item .item-overlay {
+			-ms-grid-column: 2;
+			-ms-grid-row: 1;
+			-ms-grid-row-align: stretch;
+			background: transparent;
+			display: inline-block;
+			margin-left: 10px;
+			margin-top: 0;
+			padding: 0;
+		}
 
-            .groupeditemspage .groupeditemslist .item .item-overlay .item-subtitle {
-                opacity: 0.6;
-                width: 202px;
-            }
+			.groupeditemspage .groupeditemslist .item .item-overlay .item-title {
+				margin-top: 0;
+				max-height: 40px;
+				width: 130px;
+			}
 
-    .groupeditemspage header[role=banner] {
-        -ms-grid-columns: auto 1fr;
-        margin-left: 20px;
-    }
+			.groupeditemspage .groupeditemslist .item .item-overlay .item-subtitle {
+				opacity: 0.6;
+				width: 130px;
+			}
 
-    .groupeditemspage .groupeditemslist .win-vertical.win-viewport .win-surface {
-        margin-bottom: 30px;
-        /* Add the following line. */
-        margin-top: 133px;
-        margin-left: 6px;
-    }
 }
 
 @media screen and (-ms-view-state: fullscreen-portrait) {
