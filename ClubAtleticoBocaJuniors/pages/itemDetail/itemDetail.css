@@ -48,6 +48,10 @@
             margin-right: 20px;
         }
 
+		.itemdetailpage .content article .item-content a {
+			color: #282b4a;
+		}
+
 @media screen and (-ms-view-state: snapped) {
     .itemdetailpage .content {
         -ms-grid-row: 2;
