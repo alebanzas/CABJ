@@ -1,4 +1,4 @@
-﻿.laBombonera .content {
+﻿.historia .content {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     display: block;
@@ -9,7 +9,7 @@
     z-index: 0;
 }
 
-	.laBombonera .content article {
+	.historia .content article {
 		column-fill: auto;
 		column-gap: 80px;
 		column-span: all;
@@ -19,45 +19,45 @@
 		width: 480px;
 	}
 
-		.laBombonera .content article img {
+		.historia .content article img {
 			width: 480px;
 		}
 
-		.laBombonera .content article section {
+		.historia .content article section {
 			break-inside: avoid-column;
 			height: inherit;
 		}
 
-		.laBombonera .content article .item-content p {
+		.historia .content article .item-content p {
 			margin-top: 10px;
 			margin-bottom: 20px;
 			margin-right: 20px;
 		}
 
-.laBombonera .numeros {
+.historia .numeros {
     width: 100%;
     margin-top: 30px;
 }
 
-.laBombonera .numeros td {
+.historia .numeros td {
     border-bottom: 1px solid #CCC;
     height: 40px;
     vertical-align: central;
 }
 
-	.laBombonera .numeros td:last-child {
+	.historia .numeros td:last-child {
 		font-weight: bold;
 	}
 
 @media screen and (-ms-view-state: snapped) {
-	.laBombonera .content {
+	.historia .content {
         -ms-grid-row: 2;
         -ms-grid-row-span: 1;
         overflow-x: hidden;
         overflow-y: auto;
 	}
 
-		.laBombonera .content article {
+		.historia .content article {
 			-ms-grid-columns: 300px 1fr;
 			-ms-grid-row: 2;
 			-ms-grid-rows: auto 60px;
@@ -68,25 +68,25 @@
 			width: 300px;
 		}
 
-	        .laBombonera .content article header .item-title {
+	        .historia .content article header .item-title {
                 margin-bottom: 10px;
             }
 
-            .laBombonera .content article .item-image {
+            .historia .content article .item-image {
                 width: 280px;
             }
 
-            .laBombonera .content article .item-content {
+            .historia .content article .item-content {
                 padding-bottom: 60px;
             }
 
-			.laBombonera .content article img {
+			.historia .content article img {
                 width: 280px;
             }
 }
 
 @media screen and (-ms-view-state: fullscreen-portrait) {
-    .laBombonera .content article {
+    .historia .content article {
         margin-left: 100px;
     }
 }
