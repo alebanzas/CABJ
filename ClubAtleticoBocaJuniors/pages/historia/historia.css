@@ -84,3 +84,9 @@
                 width: 280px;
             }
 }
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .laBombonera .content article {
+        margin-left: 100px;
+    }
+}
