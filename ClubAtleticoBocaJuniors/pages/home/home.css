@@ -453,3 +453,9 @@
 			width: 180px;
 		}
 }
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+	#scrollContainer {
+		padding-left: 100px;
+	}
+}
