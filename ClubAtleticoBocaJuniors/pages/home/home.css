@@ -334,7 +334,7 @@
 
 	#scrollContainer {
 		overflow-x: hidden;
-		overflow-y: scroll;
+		overflow-y: auto;
 		-ms-overflow-style: scrollbar;
 		padding-left: 40px;
 	}
