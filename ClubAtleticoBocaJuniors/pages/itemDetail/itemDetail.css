@@ -38,8 +38,11 @@
         }
 
         .itemdetailpage .content article .item-image {
-            height: 240px;
-            width: 460px;
+            width: 480px;
+        }
+
+		.itemdetailpage .content article img {
+            width: 480px;
         }
 
         .itemdetailpage .content article .item-content p {
@@ -77,7 +80,6 @@
             }
 
             .itemdetailpage .content article .item-image {
-                height: 140px;
                 width: 280px;
             }
 
@@ -86,7 +88,6 @@
             }
 
 			.itemdetailpage .content article img {
-                height: 140px;
                 width: 280px;
             }
 }
