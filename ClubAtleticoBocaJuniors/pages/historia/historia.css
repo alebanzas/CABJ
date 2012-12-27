@@ -9,20 +9,30 @@
     z-index: 0;
 }
 
-.laBombonera .content article {
-    column-fill: auto;
-    column-gap: 80px;
-    column-span: all;
-    column-width: 480px;
-    height: calc(100% - 55px);
-    margin-left: 120px;
-	width: calc(100% - 120px);
-}
+	.laBombonera .content article {
+		column-fill: auto;
+		column-gap: 80px;
+		column-span: all;
+		column-width: 480px;
+		height: calc(100% - 55px);
+		margin-left: 120px;
+		width: 480px;
+	}
 
-.laBombonera .content .item-content section {
-    height: 100%;
-	width: 480px;
-}
+		.laBombonera .content article img {
+			width: 480px;
+		}
+
+		.laBombonera .content article section {
+			break-inside: avoid-column;
+			height: inherit;
+		}
+
+		.laBombonera .content article .item-content p {
+			margin-top: 10px;
+			margin-bottom: 20px;
+			margin-right: 20px;
+		}
 
 .laBombonera .numeros {
     width: 100%;
@@ -35,20 +45,42 @@
     vertical-align: central;
 }
 
-.laBombonera .numeros td:last-child {
-    font-weight: bold;
+	.laBombonera .numeros td:last-child {
+		font-weight: bold;
+	}
+
+@media screen and (-ms-view-state: snapped) {
+	.laBombonera .content {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+	}
+
+		.laBombonera .content article {
+			-ms-grid-columns: 300px 1fr;
+			-ms-grid-row: 2;
+			-ms-grid-rows: auto 60px;
+			display: -ms-grid;
+			height: 100%;
+			margin-left: 20px;
+			margin-top: 6px;
+			width: 300px;
+		}
+
+	        .laBombonera .content article header .item-title {
+                margin-bottom: 10px;
+            }
+
+            .laBombonera .content article .item-image {
+                width: 280px;
+            }
+
+            .laBombonera .content article .item-content {
+                padding-bottom: 60px;
+            }
+
+			.laBombonera .content article img {
+                width: 280px;
+            }
 }
-
-.laBombonera .content article img {
-    width: 480px;
-}
-
-.laBombonera .content article section {
-    break-inside: avoid-column;
-    height: inherit;
-}
-
-
-@media screen and (-ms-view-state: snapped) { }
-
-@media screen and (-ms-view-state: portrait) { }
