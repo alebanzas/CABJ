@@ -1,4 +1,4 @@
-﻿.laBombonera .content {
+﻿.informacionSocios .content {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     display: block;
@@ -9,7 +9,7 @@
     z-index: 0;
 }
 
-.laBombonera .content article {
+.informacionSocios .content article {
     column-fill: auto;
     column-gap: 80px;
     column-span: all;
@@ -19,32 +19,63 @@
     width: 480px;
 }
 
-.laBombonera .content .item-content {
+.informacionSocios .content .item-content {
     height: 100%;
 }
 
-.laBombonera .numeros {
+.informacionSocios .numeros {
     width: 100%;
     margin-top: 30px;
 }
 
-.laBombonera .numeros td {
+.informacionSocios .numeros td {
     border-bottom: 1px solid #CCC;
     height: 40px;
     vertical-align: central;
 }
 
-.laBombonera .numeros td:last-child {
+.informacionSocios .numeros td:last-child {
     font-weight: bold;
 }
 
-.laBombonera .content article img {
+.informacionSocios .content article img {
     width: 480px;
 }
 
-.laBombonera .content article section {
+.informacionSocios .content article section {
     break-inside: avoid-column;
     height: inherit;
+}
+
+.informacionSocios .content article section thead td {
+    font-weight: bold;
+}
+
+.informacionSocios .content article section table.margen {
+    margin-top: 30px;
+}
+
+.informacionSocios thead tr {
+    border-bottom: 1px solid #CCC;
+    height: 40px;
+    vertical-align: central;
+}
+
+.informacionSocios .chico {
+    font-size: small;
+}
+
+.informacionSocios .content article section .precios {
+    line-break: strict;
+}
+
+.informacionSocios .content article section .line {
+    border-bottom: 1px solid #CCC;
+}
+
+.informacionSocios .content article section .scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
