@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="Club Atletico Boca Juniors" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Noticias del Club Atletico Boca Juniors" ForegroundText="dark" BackgroundColor="#F2F2F2">
+      <VisualElements DisplayName="Club Atletico Boca Juniors" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Club Atletico Boca Juniors - Noticias, informacion historica, informacion institucional." ForegroundText="dark" BackgroundColor="#F2F2F2">
         <DefaultTile ShowName="noLogos" WideLogo="images\widelogo.png" />
         <SplashScreen Image="images\splashscreen.png" />
       </VisualElements>
