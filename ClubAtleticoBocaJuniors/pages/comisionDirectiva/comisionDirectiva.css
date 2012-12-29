@@ -1,4 +1,4 @@
-﻿.laBombonera .content {
+﻿.comisionDirectiva .content {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     display: block;
@@ -9,7 +9,7 @@
     z-index: 0;
 }
 
-.laBombonera .content article {
+.comisionDirectiva .content article {
     column-fill: auto;
     column-gap: 80px;
     column-span: all;
@@ -19,30 +19,30 @@
     width: 480px;
 }
 
-.laBombonera .content .item-content {
+.comisionDirectiva .content .item-content {
     height: 100%;
 }
 
-.laBombonera .numeros {
+.comisionDirectiva .numeros {
     width: 100%;
     margin-top: 30px;
 }
 
-.laBombonera .numeros td {
+.comisionDirectiva .numeros td {
     border-bottom: 1px solid #CCC;
     height: 40px;
     vertical-align: central;
 }
 
-.laBombonera .numeros td:last-child {
+.comisionDirectiva .numeros td:last-child {
     font-weight: bold;
 }
 
-.laBombonera .content article img {
+.comisionDirectiva .content article img {
     width: 480px;
 }
 
-.laBombonera .content article section {
+.comisionDirectiva .content article section {
     break-inside: avoid-column;
     height: inherit;
 }
