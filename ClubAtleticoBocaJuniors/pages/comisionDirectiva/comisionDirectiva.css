@@ -1,0 +1,56 @@
+﻿.comisionDirectiva .content {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    display: block;
+    height: 100%;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.comisionDirectiva .content article {
+    column-fill: auto;
+    column-gap: 80px;
+    column-span: all;
+    column-width: 480px;
+    height: calc(100% - 55px);
+    margin-left: 120px;
+    width: 480px;
+}
+
+.comisionDirectiva .content .item-content {
+    height: 100%;
+}
+
+.comisionDirectiva .content article section {
+    break-inside: avoid-column;
+    height: inherit;
+}
+
+.comisionDirectiva .content ul.personal {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.comisionDirectiva .content ul.personal li {
+    border-bottom: 1px solid #CCC;
+    padding: 20px 0 2px 0;
+    margin: 0;
+}
+.comisionDirectiva .content ul.personal.menor li {
+    padding: 15px 0 2px 0;
+}
+
+.comisionDirectiva .content ul.personal li.destacado {
+    font-weight: bold;
+}
+.comisionDirectiva .content ul.personal li.destacado span {
+    font-weight: normal;
+}
+
+
+@media screen and (-ms-view-state: snapped) { }
+
+@media screen and (-ms-view-state: portrait) { }
