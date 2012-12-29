@@ -23,28 +23,31 @@
     height: 100%;
 }
 
-.comisionDirectiva .numeros {
-    width: 100%;
-    margin-top: 30px;
-}
-
-.comisionDirectiva .numeros td {
-    border-bottom: 1px solid #CCC;
-    height: 40px;
-    vertical-align: central;
-}
-
-.comisionDirectiva .numeros td:last-child {
-    font-weight: bold;
-}
-
-.comisionDirectiva .content article img {
-    width: 480px;
-}
-
 .comisionDirectiva .content article section {
     break-inside: avoid-column;
     height: inherit;
+}
+
+.comisionDirectiva .content ul.personal {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.comisionDirectiva .content ul.personal li {
+    border-bottom: 1px solid #CCC;
+    padding: 20px 0 2px 0;
+    margin: 0;
+}
+.comisionDirectiva .content ul.personal.menor li {
+    padding: 15px 0 2px 0;
+}
+
+.comisionDirectiva .content ul.personal li.destacado {
+    font-weight: bold;
+}
+.comisionDirectiva .content ul.personal li.destacado span {
+    font-weight: normal;
 }
 
 
