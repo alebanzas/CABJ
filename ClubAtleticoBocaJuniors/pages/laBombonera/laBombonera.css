@@ -80,9 +80,22 @@
                 padding-bottom: 60px;
             }
 
+			.laBombonera .content article h4 {
+				margin-right: 20px;
+			}
+
+			.laBombonera .content article ul {
+				margin-right: 20px;
+			}
+
 			.laBombonera .content article img {
                 width: 280px;
             }
+
+	.laBombonera .numeros {
+		width: auto;
+		margin-right: 20px;
+	}
 }
 
 @media screen and (-ms-view-state: fullscreen-portrait) {
