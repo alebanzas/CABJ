@@ -156,6 +156,10 @@
 		width: auto;
 		margin-right: 20px;
 	}
+
+	.informacionSocios .preciosAbonos, .informacionSocios .preciosCocheras {
+		display: none;
+	}
 }
 
 @media screen and (-ms-view-state: fullscreen-portrait) {
