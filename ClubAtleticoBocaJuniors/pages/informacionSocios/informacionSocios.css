@@ -19,13 +19,13 @@
 		width: 480px;
 	}
 
+		.informacionSocios .content article h2 {
+			margin-bottom: 30px;
+		}
+
 		.informacionSocios .content article a {
 			color: #282b4a;
 		}
-
-	.informacionSocios .content .item-content {
-		height: 100%;
-	}
 
 		.informacionSocios .content article .item-content p {
 			margin-top: 10px;
@@ -37,17 +37,8 @@
 			width: 480px;
 		}
 
-		.informacionSocios .content article section {
-			break-inside: avoid-column;
-			height: inherit;
-		}
-
 			.informacionSocios .content article section thead td {
 				font-weight: bold;
-			}
-
-			.informacionSocios .content article section table.margen {
-				margin-top: 30px;
 			}
 		
 			.informacionSocios .content article section .precios {
@@ -64,16 +55,19 @@
 			}
 
 			.informacionSocios .content article section div.abonos {
-				height: calc(100% - 50px);
+				height: calc(100% - 80px);
 			}
 
 				.informacionSocios .content article section div.abonos table {
 					width: calc(100% - 20px);
 				}
 
+	.informacionSocios .content .item-content {
+		height: 100%;
+	}
+
 .informacionSocios .numeros {
     width: 100%;
-    margin-top: 30px;
 }
 
 	.informacionSocios .numeros td {
@@ -94,6 +88,13 @@
 
 .informacionSocios .chico {
     font-size: small;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
+	.informacionSocios .content article section {
+		break-inside: avoid-column;
+		height: inherit;
+	}
 }
 
 @media screen and (-ms-view-state: snapped) {
@@ -138,6 +139,10 @@
 			.informacionSocios .content article img {
                 width: 280px;
             }
+
+			.informacionSocios .content article section {
+				margin-bottom: 40px;
+			}
 
 			.informacionSocios .content article section .scroll {
 				overflow-y: visible;
