@@ -19,39 +19,51 @@
 		width: 480px;
 	}
 
+		.informacionSocios .content article a {
+			color: #282b4a;
+		}
+
 	.informacionSocios .content .item-content {
 		height: 100%;
 	}
 
-	.informacionSocios .content article img {
-		width: 480px;
-	}
-
-	.informacionSocios .content article section {
-		break-inside: avoid-column;
-		height: inherit;
-	}
-
-		.informacionSocios .content article section thead td {
-			font-weight: bold;
+		.informacionSocios .content article img {
+			width: 480px;
 		}
 
-		.informacionSocios .content article section table.margen {
-			margin-top: 30px;
+		.informacionSocios .content article section {
+			break-inside: avoid-column;
+			height: inherit;
 		}
+
+			.informacionSocios .content article section thead td {
+				font-weight: bold;
+			}
+
+			.informacionSocios .content article section table.margen {
+				margin-top: 30px;
+			}
 		
-		.informacionSocios .content article section .precios {
-			line-break: strict;
-		}
+			.informacionSocios .content article section .precios {
+				line-break: strict;
+			}
 
-		.informacionSocios .content article section .line {
-			border-bottom: 1px solid #CCC;
-		}
+			.informacionSocios .content article section .line {
+				border-bottom: 1px solid #CCC;
+			}
 
-		.informacionSocios .content article section .scroll {
-			overflow-y: scroll;
-			overflow-x: hidden;
-		}
+			.informacionSocios .content article section .scroll {
+				overflow-y: scroll;
+				overflow-x: hidden;
+			}
+
+			.informacionSocios .content article section div.abonos {
+				height: calc(100% - 50px);
+			}
+
+				.informacionSocios .content article section div.abonos table {
+					width: calc(100% - 20px);
+				}
 
 .informacionSocios .numeros {
     width: 100%;
