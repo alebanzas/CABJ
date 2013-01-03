@@ -27,6 +27,12 @@
 		height: 100%;
 	}
 
+		.informacionSocios .content article .item-content p {
+			margin-top: 10px;
+			margin-bottom: 20px;
+			margin-right: 20px;
+		}
+
 		.informacionSocios .content article img {
 			width: 480px;
 		}
@@ -53,7 +59,7 @@
 			}
 
 			.informacionSocios .content article section .scroll {
-				overflow-y: scroll;
+				overflow-y: auto;
 				overflow-x: hidden;
 			}
 
@@ -90,6 +96,70 @@
     font-size: small;
 }
 
-@media screen and (-ms-view-state: snapped) { }
+@media screen and (-ms-view-state: snapped) {
+ 	.informacionSocios .content {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+	}
 
-@media screen and (-ms-view-state: fullscreen-portrait) { }
+		.informacionSocios .content article {
+			-ms-grid-columns: 300px 1fr;
+			-ms-grid-row: 2;
+			-ms-grid-rows: auto 60px;
+			display: -ms-grid;
+			height: 100%;
+			margin-left: 20px;
+			margin-top: 6px;
+			width: 300px;
+		}
+
+	        .informacionSocios .content article header .item-title {
+                margin-bottom: 10px;
+            }
+
+            .informacionSocios .content article .item-image {
+                width: 280px;
+            }
+
+            .informacionSocios .content article .item-content {
+                padding-bottom: 60px;
+            }
+
+			.informacionSocios .content article h4 {
+				margin-right: 20px;
+			}
+
+			.informacionSocios .content article ul {
+				margin-right: 20px;
+			}
+
+			.informacionSocios .content article img {
+                width: 280px;
+            }
+
+			.informacionSocios .content article section .scroll {
+				overflow-y: visible;
+				overflow-x: hidden;
+			}
+
+				.informacionSocios .content article section div.abonos {
+					height: 100%;
+				}
+
+				.informacionSocios .content article section div.abonos table {
+					width: 100%;
+				}
+
+	.informacionSocios .numeros {
+		width: auto;
+		margin-right: 20px;
+	}
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .informacionSocios .content article {
+        margin-left: 100px;
+    }
+}
