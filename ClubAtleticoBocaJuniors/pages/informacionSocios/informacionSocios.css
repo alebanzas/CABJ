@@ -1,0 +1,84 @@
+﻿.informacionSocios .content {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    display: block;
+    height: 100%;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.informacionSocios .content article {
+    column-fill: auto;
+    column-gap: 80px;
+    column-span: all;
+    column-width: 480px;
+    height: calc(100% - 55px);
+    margin-left: 120px;
+    width: 480px;
+}
+
+.informacionSocios .content .item-content {
+    height: 100%;
+}
+
+.informacionSocios .numeros {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.informacionSocios .numeros td {
+    border-bottom: 1px solid #CCC;
+    height: 40px;
+    vertical-align: central;
+}
+
+.informacionSocios .numeros td:last-child {
+    font-weight: bold;
+}
+
+.informacionSocios .content article img {
+    width: 480px;
+}
+
+.informacionSocios .content article section {
+    break-inside: avoid-column;
+    height: inherit;
+}
+
+.informacionSocios .content article section thead td {
+    font-weight: bold;
+}
+
+.informacionSocios .content article section table.margen {
+    margin-top: 30px;
+}
+
+.informacionSocios thead tr {
+    border-bottom: 1px solid #CCC;
+    height: 40px;
+    vertical-align: central;
+}
+
+.informacionSocios .chico {
+    font-size: small;
+}
+
+.informacionSocios .content article section .precios {
+    line-break: strict;
+}
+
+.informacionSocios .content article section .line {
+    border-bottom: 1px solid #CCC;
+}
+
+.informacionSocios .content article section .scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+@media screen and (-ms-view-state: snapped) { }
+
+@media screen and (-ms-view-state: portrait) { }
