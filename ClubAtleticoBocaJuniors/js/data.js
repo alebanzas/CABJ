@@ -279,7 +279,9 @@
         getItemsFromGroup: getItemsFromGroup,
         resolveGroupReference: resolveGroupReference,
         resolveItemReference: resolveItemReference,
-        refresh: getBlogPosts
+        refresh: getBlogPosts,
+        isInternetAvailable: isInternetAvailable,
+        showConnectionError: showConnectionError
     });
 
     // Get a reference for an item, using the group key and item title as a
