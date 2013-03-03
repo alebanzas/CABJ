@@ -44,6 +44,17 @@
     function refreshContent() {
         Data.refresh();
     };
+    
+    app.onerror = function (e) {
+
+        var dialog = new Windows.UI.Popups.MessageDialog(
+            e.detail.stack, e.detail.message);
+
+        dialog.showAsync().done();
+
+        return true;
+    };
+
 
     app.oncheckpoint = function (args) {
         // TODO: This application is about to be suspended. Save any state
