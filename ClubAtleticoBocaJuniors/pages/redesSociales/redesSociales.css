@@ -1,0 +1,49 @@
+﻿.redesSociales section[role=main] {
+    margin-left: 120px;
+    -ms-grid-columns:600px 1fr 1fr;
+    display:-ms-grid;
+    -ms-grid-rows:1fr;
+}
+.aboutbox {
+    -ms-grid-column:1;
+    -ms-grid-row:1;
+    width:500px;
+}
+.wall {
+    -ms-grid-column:3;
+    -ms-grid-row:1;
+}
+.photosbox {
+    -ms-grid-column:2;
+    -ms-grid-row:1;
+}
+
+.culinary_team {
+    font-size: 12px;
+}
+
+.pageLikes {
+    background-image: url(/images/like.png);
+    background-repeat:no-repeat;
+    background-position-x:left;
+    background-size:20px;
+    padding-left:30px;
+}
+
+.category {
+    display:none;
+}
+
+#bingMap { height: 400px; width:500px }
+
+@media screen and (-ms-view-state: snapped) {
+    .redesSociales section[role=main] {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .redesSociales section[role=main] {
+        margin-left: 100px;
+    }
+}
