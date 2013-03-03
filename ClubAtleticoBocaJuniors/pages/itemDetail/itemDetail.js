@@ -20,44 +20,60 @@
             item = options && options.item ? Data.resolveItemReference(options.item) : Data.items.getAt(0);
             
             if (item.group.scrapOficialWebItem) {
+
+                var showError = function () {
+                    var popup = Windows.UI.Popups.MessageDialog("Ocurrió un error al intentar obtener la noticia. Intentelo nuevamente más tarde.", "Ups.");
+                    popup.showAsync().done();
+                };
+                if (!Data.isInternetAvailable()) {
+                    Data.showConnectionError();
+                    element.querySelector("article .item-content").innerHTML = "<p></p>";
+                    return;
+                }
+
                 $.get(item.link, function (responseText) {
                     var rr = window.toStaticHTML(responseText);
 
-                    element.querySelector(".titlearea .pagetitle").textContent = item.group.title;
-                    element.querySelector("article .item-title").textContent = item.title;
-                    element.querySelector("article .item-subtitle").textContent = item.pubDate;
-                    element.querySelector("article .item-link").attributes.href.value = item.link;
-                    var noticiaId = $("body", rr).attr('idNoticia');
-                    var noticia = $(".noticia", rr);
-                    $("img", noticia).each(function(postIndex) {
-                        var src = $(this).attr("src");
-                        if (src) {
-                            $(this).attr("src", "http://www.bocajuniors.com.ar/" + src);
-                        } else {
-                            $(this).remove();
-                        }
-                    });
-                    $(".sponsor_noticias", noticia).remove();
-                    $(".cont_ads", noticia).remove();
-                    $("#autorfecha", noticia).remove();
-                    $("#jquery_jplayer", noticia).remove();
-                    $("#player_container", noticia).remove();
-                    $("h1:first", noticia).remove();
-                    $(".banner_registro", noticia).remove();
-                    $('*[style]', noticia).attr('style', '');
+                    try {
+                        element.querySelector(".titlearea .pagetitle").textContent = item.group.title;
+                        element.querySelector("article .item-title").textContent = item.title;
+                        element.querySelector("article .item-subtitle").textContent = item.pubDate;
+                        element.querySelector("article .item-link").attributes.href.value = item.link;
+
+                        var noticiaId = $("body", rr).attr('idNoticia');
+                        var noticia = $(".noticia", rr);
+                        $("img", noticia).each(function(postIndex) {
+                            var src = $(this).attr("src");
+                            if (src) {
+                                $(this).attr("src", "http://www.bocajuniors.com.ar/" + src);
+                            } else {
+                                $(this).remove();
+                            }
+                        });
+                        $(".sponsor_noticias", noticia).remove();
+                        $(".cont_ads", noticia).remove();
+                        $("#autorfecha", noticia).remove();
+                        $("#jquery_jplayer", noticia).remove();
+                        $("#player_container", noticia).remove();
+                        $("h1:first", noticia).remove();
+                        $(".banner_registro", noticia).remove();
+                        $('*[style]', noticia).attr('style', '');
                     
-                    /*if ($('div.galeria_de_fotos', noticia).length > 0) {
-                        $.post('http://www.bocajuniors.com.ar/noticias/getjsongaleria', { id: noticiaId },
-                                function (data) {
-                                    if (data) {
+                        /*if ($('div.galeria_de_fotos', noticia).length > 0) {
+                            $.post('http://www.bocajuniors.com.ar/noticias/getjsongaleria', { id: noticiaId },
+                                    function (data) {
+                                        if (data) {
                                         
+                                        }
                                     }
-                                }
-                            , 'json');
-                    }*/
+                                , 'json');
+                        }*/
                     
-                    element.querySelector("article .item-content").innerHTML = noticia.html();
-                    element.querySelector(".content").focus();
+                        element.querySelector("article .item-content").innerHTML = noticia.html();
+                        element.querySelector(".content").focus();
+                    } catch (e) {
+                        showError();
+                    }
                 });
             } else {
                 element.querySelector(".titlearea .pagetitle").textContent = item.group.title;
