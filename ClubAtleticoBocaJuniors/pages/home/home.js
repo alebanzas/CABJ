@@ -5,6 +5,9 @@
     
     WinJS.UI.Pages.define("/pages/home/home.html", {
         ready: function (element, options) {
+            document.getElementById("redesSociales").onclick = function () {
+                nav.navigate("/pages/redesSociales/redesSociales.html", nav.state);
+            };
             document.getElementById("laBombonera").onclick = function () {
                 nav.navigate("/pages/laBombonera/laBombonera.html", nav.state);
             };
