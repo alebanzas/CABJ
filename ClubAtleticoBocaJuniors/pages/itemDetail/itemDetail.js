@@ -18,7 +18,7 @@
         ready: function (element, options) {
 
             item = options && options.item ? Data.resolveItemReference(options.item) : Data.items.getAt(0);
-            
+            var itemContent = element.querySelector("article .item-content");
             if (item.group.scrapOficialWebItem) {
 
                 var showError = function () {
@@ -27,7 +27,8 @@
                 };
                 if (!Data.isInternetAvailable()) {
                     Data.showConnectionError();
-                    element.querySelector("article .item-content").innerHTML = "<p></p>";
+                    itemContent.innerHTML = "<p></p>";
+                    Data.loaded = false;
                     return;
                 }
 
@@ -42,14 +43,6 @@
 
                         var noticiaId = $("body", rr).attr('idNoticia');
                         var noticia = $(".noticia", rr);
-                        $("img", noticia).each(function(postIndex) {
-                            var src = $(this).attr("src");
-                            if (src) {
-                                $(this).attr("src", "http://www.bocajuniors.com.ar/" + src);
-                            } else {
-                                $(this).remove();
-                            }
-                        });
                         $(".sponsor_noticias", noticia).remove();
                         $(".cont_ads", noticia).remove();
                         $("#autorfecha", noticia).remove();
@@ -69,7 +62,18 @@
                                 , 'json');
                         }*/
                     
-                        element.querySelector("article .item-content").innerHTML = noticia.html();
+                        itemContent.innerHTML = noticia.html();
+                        
+                        $("img", itemContent).each(function (postIndex) {
+                            var src = $(this).attr("src");
+                            if (src) {
+                                $(this).attr("src", "http://www.bocajuniors.com.ar/" + src);
+                                $(this).attr("onerror", "this.src='http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png'");
+                            } else {
+                                $(this).remove();
+                            }
+                        });
+
                         element.querySelector(".content").focus();
                     } catch (e) {
                         showError();
@@ -80,7 +84,7 @@
                 element.querySelector("article .item-title").textContent = item.title;
                 element.querySelector("article .item-subtitle").textContent = item.pubDate;
                 element.querySelector("article .item-link").attributes.href.value = item.link;
-                element.querySelector("article .item-content").innerHTML = item.content;
+                itemContent.innerHTML = item.content;
                 element.querySelector(".content").focus();
             }
             //element.querySelector("article .item-content").innerHTML = item.content;
