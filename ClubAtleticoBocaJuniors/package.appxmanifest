@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="19566AleBanzas.ClubAtleticoBocaJuniors" Version="1.0.0.3" Publisher="CN=F4AEC4CF-6018-4F4B-8C0B-7EBF9C7F9447" />
+  <Identity Name="19566AleBanzas.ClubAtleticoBocaJuniors" Version="2.0.0.0" Publisher="CN=F4AEC4CF-6018-4F4B-8C0B-7EBF9C7F9447" />
   <Properties>
     <DisplayName>Club Atletico Boca Juniors</DisplayName>
     <PublisherDisplayName>Ale Banzas</PublisherDisplayName>
@@ -26,5 +26,6 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
   </Capabilities>
 </Package>
