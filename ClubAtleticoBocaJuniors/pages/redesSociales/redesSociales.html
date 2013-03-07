@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <script src="/js/FacebookWinJS.js"></script>
+    <script src="/js/facebookSDK.js"></script>
+    <script src="/js/dataRS.js"></script>
+
+    <script src="/Bing.Maps.JavaScript/js/veapicore.js"></script>
+    <script src="/Bing.Maps.JavaScript/js/veapiModules.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/redesSociales/redesSociales.css" rel="stylesheet" />
+    <script src="/pages/redesSociales/redesSociales.js"></script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <div id="photoTemplate" data-win-control="WinJS.Binding.Template">
+        <img class="photo-image" src="#" data-win-bind="src:source; width:width; height:height" />
+    </div>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment redesSociales">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle"></span>
+            </h1>
+            <!--<div class="loginButton" data-win-control="FacebookWinJS.Login" data-win-options="{appId: 495132727184999}"></div>-->
+        </header>
+        <section aria-label="Main content" role="main">
+            <div class="aboutbox">
+                <p class="about"></p>
+                <p class="culinary_team"></p>
+                <p class="category"></p>
+                <p class="pageLikes"></p>
+                <div id="bingMap"></div>
+                <p><a href="#" class="website"></a></p>
+            </div>
+            <div class="photosbox">
+                <div data-win-control="WinJS.UI.ListView" id="photos" data-win-options="{ selectionMode: 'none', tapBehavior: 'none' }"></div>
+            </div>
+            <div class="wall">
+                <div data-win-control="WinJS.UI.ListView" id="wall"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

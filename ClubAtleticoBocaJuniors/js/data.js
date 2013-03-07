@@ -120,6 +120,7 @@
                     return feeds;
                 });
         } else {
+            loaded = false;
             readFile();
             showConnectionError();
         }
@@ -262,11 +263,18 @@
 
                for (var i = 1; i <= bp._lastNotifyLength; i++) {
                    var p = bp._keyMap[i];
-                   blogPosts.push({
-                       group: p.data.group, key: p.data.key, title: p.data.title,
-                       author: p.data.author, pubDate: p.data.pubDate, backgroundImage: p.data.backgroundImage,
-                       content: p.data.content
-                   });
+                   if (p) {
+                       blogPosts.push({
+                           group: p.data.group,
+                           key: p.data.key,
+                           title: p.data.title,
+                           author: p.data.author,
+                           pubDate: p.data.pubDate,
+                           backgroundImage: p.data.backgroundImage,
+                           content: p.data.content,
+                           link: p.data.link
+                       });
+                   }
                }
            }, function () {
            });
@@ -280,6 +288,7 @@
         resolveGroupReference: resolveGroupReference,
         resolveItemReference: resolveItemReference,
         refresh: getBlogPosts,
+        loaded: loaded,
         isInternetAvailable: isInternetAvailable,
         showConnectionError: showConnectionError
     });

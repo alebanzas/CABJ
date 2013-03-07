@@ -23,7 +23,7 @@
     </div>
     <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
         <div class="item">
-            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" width="100%" height="100%" />
+            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" width="100%" height="100%" onerror="this.src='http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png'" />
             <div class="item-overlay">
                 <h4 class="item-title" data-win-bind="textContent: title"></h4>
                 <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: pubDate"></h6>
@@ -33,7 +33,7 @@
 
     <div class="multisizebaseitemtemplate" data-win-control="WinJS.Binding.Template">
         <div class="item">
-            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" onerror="this.src='http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png'" />
             <div class="item-overlay">
                 <h4 class="item-title" data-win-bind="textContent: title"></h4>
                 <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: pubDate"></h6>
