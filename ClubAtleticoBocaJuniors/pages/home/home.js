@@ -12,6 +12,7 @@
         	var historiaEquipos = document.getElementById("historiaEquipos");
         	var historiaCamisetas = document.getElementById("historiaCamisetas");
         	var informacionSocios = document.getElementById("informacionSocios");
+	        var redesSociales = document.getElementById("redesSociales");
 	        
 	        laBombonera.onclick = function () {
                 nav.navigate("/pages/laBombonera/laBombonera.html", nav.state);
@@ -34,6 +35,9 @@
 	        informacionSocios.onclick = function () {
                 nav.navigate("/pages/informacionSocios/informacionSocios.html", nav.state);
 	        };
+	        redesSociales.onclick = function () {
+	        	nav.navigate("/pages/redesSociales/redesSociales.html", nav.state);
+	        };
 
 	        laBombonera.addEventListener("MSPointerDown", onPointerDown, false);
 	        laBombonera.addEventListener("MSPointerUp", onPointerUp, false);
@@ -49,9 +53,11 @@
 	        historiaCamisetas.addEventListener("MSPointerUp", onPointerUp, false);
 	        informacionSocios.addEventListener("MSPointerDown", onPointerDown, false);
 	        informacionSocios.addEventListener("MSPointerUp", onPointerUp, false);
-
+	        redesSociales.addEventListener("MSPointerDown", onPointerDown, false);
+	        redesSociales.addEventListener("MSPointerUp", onPointerUp, false);
+	        
 	        var header = document.querySelector(".homepage header[role=banner]");
-	        enterAnimation([header], [historia, historiaEquipos, historiaCamisetas], [laBombonera], [noticias, comisionDirectiva, informacionSocios]);
+	        enterAnimation([header], [historia, historiaEquipos, historiaCamisetas], [laBombonera, redesSociales], [noticias, comisionDirectiva, informacionSocios]);
 	    },
     });
 
