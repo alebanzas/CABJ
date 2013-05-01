@@ -1,0 +1,174 @@
+﻿.informacionSocios .content {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    display: block;
+    height: 100%;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+	.informacionSocios .content article {
+		column-fill: auto;
+		column-gap: 80px;
+		column-span: all;
+		column-width: 480px;
+		height: calc(100% - 55px);
+		margin-left: 120px;
+		width: 480px;
+	}
+
+		.informacionSocios .content article h2 {
+			margin-bottom: 30px;
+		}
+
+		.informacionSocios .content article a {
+			color: #282b4a;
+		}
+
+		.informacionSocios .content article .item-content p {
+			margin-top: 10px;
+			margin-bottom: 20px;
+			margin-right: 20px;
+		}
+
+		.informacionSocios .content article img {
+			width: 480px;
+		}
+
+			.informacionSocios .content article section thead td {
+				font-weight: bold;
+			}
+		
+			.informacionSocios .content article section .precios {
+				line-break: strict;
+			}
+
+			.informacionSocios .content article section .line {
+				border-bottom: 1px solid #CCC;
+			}
+
+			.informacionSocios .content article section .scroll {
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
+
+			.informacionSocios .content article section div.abonos {
+				height: calc(100% - 80px);
+			}
+
+				.informacionSocios .content article section div.abonos table {
+					width: calc(100% - 20px);
+				}
+
+	.informacionSocios .content .item-content {
+		height: 100%;
+	}
+
+.informacionSocios .numeros {
+    width: 100%;
+}
+
+	.informacionSocios .numeros td {
+		border-bottom: 1px solid #CCC;
+		height: 40px;
+		vertical-align: central;
+	}
+
+	.informacionSocios .numeros td:last-child {
+		font-weight: bold;
+	}
+
+.informacionSocios thead tr {
+    border-bottom: 1px solid #CCC;
+    height: 40px;
+    vertical-align: central;
+}
+
+.informacionSocios .chico {
+    font-size: small;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
+	.informacionSocios .content article section {
+		break-inside: avoid-column;
+		height: inherit;
+	}
+}
+
+@media screen and (-ms-view-state: snapped) {
+ 	.informacionSocios .content {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+	}
+
+		.informacionSocios .content article {
+			-ms-grid-columns: 300px 1fr;
+			-ms-grid-row: 2;
+			-ms-grid-rows: auto 60px;
+			display: -ms-grid;
+			height: 100%;
+			margin-left: 20px;
+			margin-top: 6px;
+			width: 300px;
+		}
+
+	        .informacionSocios .content article header .item-title {
+                margin-bottom: 10px;
+            }
+
+            .informacionSocios .content article .item-image {
+                width: 280px;
+            }
+
+            .informacionSocios .content article .item-content {
+                padding-bottom: 60px;
+            }
+
+			.informacionSocios .content article h4 {
+				margin-right: 20px;
+			}
+
+			.informacionSocios .content article ul {
+				margin-right: 20px;
+			}
+
+			.informacionSocios .content article img {
+                width: 280px;
+            }
+
+			.informacionSocios .content article section {
+				margin-bottom: 40px;
+			}
+
+			.informacionSocios .content article section .scroll {
+				overflow-y: visible;
+				overflow-x: hidden;
+			}
+
+				.informacionSocios .content article section div.abonos {
+					height: 100%;
+				}
+
+				.informacionSocios .content article section div.abonos table {
+					width: 100%;
+				}
+
+	.informacionSocios .numeros {
+		width: auto;
+		margin-right: 20px;
+	}
+
+	.informacionSocios .preciosAbonos, .informacionSocios .preciosCocheras {
+		display: none;
+	}
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .informacionSocios .content article {
+        margin-left: 100px;
+    }
+}

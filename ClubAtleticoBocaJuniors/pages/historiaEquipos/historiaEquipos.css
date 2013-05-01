@@ -1,0 +1,92 @@
+﻿.historiaEquipos .content {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    display: block;
+    height: 100%;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+	.historiaEquipos .content article {
+		column-fill: auto;
+		column-gap: 80px;
+		column-span: all;
+		column-width: 480px;
+		height: calc(100% - 55px);
+		margin-left: 120px;
+		width: 480px;
+	}
+
+		.historiaEquipos .content article img {
+			width: 480px;
+		}
+
+		.historiaEquipos .content article section {
+			break-inside: avoid-column;
+			height: inherit;
+		}
+
+		.historiaEquipos .content article .item-content p {
+			margin-top: 10px;
+			margin-bottom: 20px;
+			margin-right: 20px;
+		}
+
+.historiaEquipos .numeros {
+    width: 100%;
+    margin-top: 30px;
+}
+
+	.historiaEquipos .numeros td {
+		border-bottom: 1px solid #CCC;
+		height: 40px;
+		vertical-align: central;
+	}
+
+	.historiaEquipos .numeros td:last-child {
+		font-weight: bold;
+	}
+
+@media screen and (-ms-view-state: snapped) {
+ 	.historiaEquipos .content {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+	}
+
+		.historiaEquipos .content article {
+			-ms-grid-columns: 300px 1fr;
+			-ms-grid-row: 2;
+			-ms-grid-rows: auto 60px;
+			display: -ms-grid;
+			height: 100%;
+			margin-left: 20px;
+			margin-top: 6px;
+			width: 300px;
+		}
+
+	        .historiaEquipos .content article header .item-title {
+                margin-bottom: 10px;
+            }
+
+            .historiaEquipos .content article .item-image {
+                width: 280px;
+            }
+
+            .historiaEquipos .content article .item-content {
+                padding-bottom: 60px;
+            }
+
+			.historiaEquipos .content article img {
+                width: 280px;
+            }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .historiaEquipos .content article {
+        margin-left: 100px;
+    }
+}
