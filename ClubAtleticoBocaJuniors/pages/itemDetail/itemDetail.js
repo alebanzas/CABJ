@@ -24,11 +24,10 @@
                 var showError = function () {
                     var popup = Windows.UI.Popups.MessageDialog("Ocurrió un error al intentar obtener la noticia. Intentelo nuevamente más tarde.", "Ups.");
                     popup.showAsync().done();
+                    WinJS.Navigation.back(1).done();
                 };
                 if (!Data.isInternetAvailable()) {
-                    Data.showConnectionError();
-                    itemContent.innerHTML = "<p></p>";
-                    Data.loaded = false;
+                    WinJS.Navigation.back(1).done();
                     return;
                 }
 
@@ -68,12 +67,7 @@
                             var src = $(this).attr("src");
                             if (src) {
                                 $(this).attr("src", "http://www.bocajuniors.com.ar/" + src);
-                                $(this).error(function () {
-                                    $(this).attr("src", "http://www.bocajuniors.com.ar/" + src.replace("_0-lo.jpg", "_1-lo.jpg"));
-                                    $(this).error(function () {
-                                        $(this).attr("src", "http://www.bocajuniors.com.ar/img/es-ar/logo-boca_juniors_v2.png");
-                                    });
-                                });
+                                //$(this).attr("onerror", "this.src='http://www.bocajuniors.com.ar/img/es-ar/logo-boca_juniors_v2.png'");
                             } else {
                                 $(this).remove();
                             }
