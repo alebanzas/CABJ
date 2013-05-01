@@ -32,7 +32,7 @@
 
 /* Layout */
 
-#historia {
+#noticias {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
 }
@@ -54,11 +54,12 @@
 
 
 #redesSociales {
-	-ms-grid-row: 2;
-	-ms-grid-column: 3;
+    display: none;
+	/*-ms-grid-row: 2;
+	-ms-grid-column: 3;*/
 }
 
-#noticias {
+#historia {
 	-ms-grid-row: 1;
 	-ms-grid-column: 4;
 }
@@ -116,10 +117,12 @@
             padding-bottom: 30px;
         }
 
+        /*
         #laBombonera.wide .wedge h4 {
             padding-left: 0;
             padding-right: 40px;
         }
+            */
 
 .square {
 	height: 250px;

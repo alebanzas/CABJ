@@ -39,22 +39,22 @@
 	        	nav.navigate("/pages/redesSociales/redesSociales.html", nav.state);
 	        };
 
-	        laBombonera.addEventListener("MSPointerDown", onPointerDown, false);
-	        laBombonera.addEventListener("MSPointerUp", onPointerUp, false);
-	        historia.addEventListener("MSPointerDown", onPointerDown, false);
-	        historia.addEventListener("MSPointerUp", onPointerUp, false);
-	        noticias.addEventListener("MSPointerDown", onPointerDown, false);
-	        noticias.addEventListener("MSPointerUp", onPointerUp, false);
-	        comisionDirectiva.addEventListener("MSPointerDown", onPointerDown, false);
-	        comisionDirectiva.addEventListener("MSPointerUp", onPointerUp, false);
-	        historiaEquipos.addEventListener("MSPointerDown", onPointerDown, false);
-	        historiaEquipos.addEventListener("MSPointerUp", onPointerUp, false);
-	        historiaCamisetas.addEventListener("MSPointerDown", onPointerDown, false);
-	        historiaCamisetas.addEventListener("MSPointerUp", onPointerUp, false);
-	        informacionSocios.addEventListener("MSPointerDown", onPointerDown, false);
-	        informacionSocios.addEventListener("MSPointerUp", onPointerUp, false);
-	        redesSociales.addEventListener("MSPointerDown", onPointerDown, false);
-	        redesSociales.addEventListener("MSPointerUp", onPointerUp, false);
+	        //laBombonera.addEventListener("MSPointerDown", onPointerDown, false);
+	        //laBombonera.addEventListener("MSPointerUp", onPointerUp, false);
+	        //historia.addEventListener("MSPointerDown", onPointerDown, false);
+	        //historia.addEventListener("MSPointerUp", onPointerUp, false);
+	        //noticias.addEventListener("MSPointerDown", onPointerDown, false);
+	        //noticias.addEventListener("MSPointerUp", onPointerUp, false);
+	        //comisionDirectiva.addEventListener("MSPointerDown", onPointerDown, false);
+	        //comisionDirectiva.addEventListener("MSPointerUp", onPointerUp, false);
+	        //historiaEquipos.addEventListener("MSPointerDown", onPointerDown, false);
+	        //historiaEquipos.addEventListener("MSPointerUp", onPointerUp, false);
+	        //historiaCamisetas.addEventListener("MSPointerDown", onPointerDown, false);
+	        //historiaCamisetas.addEventListener("MSPointerUp", onPointerUp, false);
+	        //informacionSocios.addEventListener("MSPointerDown", onPointerDown, false);
+	        //informacionSocios.addEventListener("MSPointerUp", onPointerUp, false);
+	        //redesSociales.addEventListener("MSPointerDown", onPointerDown, false);
+	        //redesSociales.addEventListener("MSPointerUp", onPointerUp, false);
 	        
 	        var header = document.querySelector(".homepage header[role=banner]");
 	        enterAnimation([header], [historia, historiaEquipos, historiaCamisetas], [laBombonera, redesSociales], [noticias, comisionDirectiva, informacionSocios]);
