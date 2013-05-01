@@ -13,19 +13,26 @@
     var ui = WinJS.UI;
     var utils = WinJS.Utilities;
     var searchPageURI = "/pages/searchResults/searchResults.html";
+    var listView;
 
-    ui.Pages.define(searchPageURI, {
+    var that = ui.Pages.define(searchPageURI, {
         _filters: [],
         _lastSearch: "",
 
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
-            var listView = element.querySelector(".resultslist").winControl;
+            
+            listView = element.querySelector(".resultslist").winControl;
+            //listView.itemDataSource = Data.items.dataSource;
+            //listView.groupDataSource = null;
             listView.itemTemplate = element.querySelector(".itemtemplate");
             listView.oniteminvoked = this._itemInvoked;
-            this._handleQuery(element, options);
-            listView.element.focus();
+
+            Data.refresh().done(function() {
+                that._handleQuery(element, options);
+                listView.element.focus();
+            });
         },
 
         // This function updates the page layout in response to viewState changes.
@@ -35,10 +42,10 @@
             var listView = element.querySelector(".resultslist").winControl;
             if (lastViewState !== viewState) {
                 if (lastViewState === appViewState.snapped || viewState === appViewState.snapped) {
-                    var handler = function (e) {
+                    var handler = function(e) {
                         listView.removeEventListener("contentanimating", handler, false);
                         e.preventDefault();
-                    }
+                    };
                     listView.addEventListener("contentanimating", handler, false);
                     var firstVisible = listView.indexOfFirstVisible;
                     this._initializeLayout(listView, viewState);
@@ -85,19 +92,24 @@
 
         // This function executes each step required to perform a search.
         _handleQuery: function (element, args) {
+
+            var query = "";
+            if (args.queryText)
+                query = args.queryText;
+
             var originalResults;
-            this._lastSearch = args.queryText;
+            this._lastSearch = query;
             WinJS.Namespace.define("searchResults", { markText: WinJS.Binding.converter(this._markText.bind(this)) });
             this._initializeLayout(element.querySelector(".resultslist").winControl, Windows.UI.ViewManagement.ApplicationView.value);
             this._generateFilters();
-            originalResults = this._searchData(args.queryText);
+            originalResults = this._searchData(query);
+            this._populateFilterBar(element, originalResults);
+            this._applyFilter(this._filters[0], originalResults);
             if (originalResults.length === 0) {
                 document.querySelector('.filterarea').style.display = "none";
             } else {
                 document.querySelector('.resultsmessage').style.display = "none";
             }
-            this._populateFilterBar(element, originalResults);
-            this._applyFilter(this._filters[0], originalResults);
         },
 
         // This function updates the ListView with new layouts
@@ -173,7 +185,7 @@
             // TODO: Perform the appropriate search on your data.
             if (window.Data) {
                 originalResults = Data.items.createFiltered(function (item) {
-                    return (item.title.indexOf(queryText) >= 0 || item.content.indexOf(queryText) >= 0 || item.author.indexOf(queryText) >= 0);
+                    return (item.title.toLowerCase().indexOf(queryText.toLowerCase()) >= 0 || item.content.toLowerCase().indexOf(queryText.toLowerCase()) >= 0);
                 });
             } else {
                 originalResults = new WinJS.Binding.List();
