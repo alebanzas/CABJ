@@ -21,6 +21,7 @@
         var rr = window.toStaticHTML(responseText);
         
         var html = $("ul.listado li", $(rr)).each(function (postIndex) {
+            
             var item = $(this);
             var postTitle = $(".info strong", item).text();
             var postAuthor = "CABJ Oficial";
@@ -79,16 +80,25 @@
         return internetProfile != null && internetProfile.getNetworkConnectivityLevel() == Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess;
     }
 
-    function getBlogPosts() {
-        if (isInternetAvailable()) {
-            var pr = document.createElement("progress");
-            var header = document.querySelector("header h1");
-            header.appendChild(pr);
+    function startRequest() {
+        var pr = document.createElement("progress");
+        var header = document.querySelector("header h1");
+        header.appendChild(pr);
+    }
+    
+    function endRequest() {
+        var header = document.querySelector("header h1");
+        var pr = document.querySelector("header h1 progress");
+        header.removeChild(pr);
+    }
 
-            if (refreshed) {
-                var progress = document.getElementsByTagName('progress');
-                progress[0].style.display = "none";
-                return new WinJS.Promise();
+    function getBlogPosts() {
+
+        startRequest();
+        if (isInternetAvailable() && (blogPosts.length == 0 || !refreshed)) {
+            
+            while (blogPosts.length > 0) {
+                blogPosts.pop();
             }
 
             return getFeeds()
@@ -114,16 +124,40 @@
                     });
                     refreshed = true;
                     writeFile(JSON.stringify(blogPosts));
+                    endRequest();
                 })
                 .then(function (ffs) {
-                    header.removeChild(pr);
                     return ffs;
                 });
         } else {
-            refreshed = false;
-            readFile();
-            showConnectionError();
-            return new WinJS.Promise();
+            return readFile().then(function(sampleFile) {
+                                return Windows.Storage.FileIO.readTextAsync(sampleFile);
+                            }).then(function(content) {
+                                //showConnectionError();
+                                endRequest();
+                                return content;
+                            }).then(function(content) {
+                                var bp = JSON.parse(content);
+                                while (blogPosts.length > 0) {
+                                    blogPosts.pop();
+                                }
+                                
+                                for (var i = bp._currentKey - bp._lastNotifyLength + 1; i <= bp._currentKey; i++) {
+                                    var p = bp._keyMap[i];
+                                    if (p) {
+                                        blogPosts.push({
+                                            group: p.data.group,
+                                            key: p.data.key,
+                                            title: p.data.title,
+                                            author: p.data.author,
+                                            pubDate: p.data.pubDate,
+                                            backgroundImage: p.data.backgroundImage,
+                                            content: p.data.content,
+                                            link: p.data.link
+                                        });
+                                    }
+                                }
+                            });
         }
     };
 
@@ -255,32 +289,7 @@
     }
 
     function readFile() {
-        localFolder.getFileAsync("dataFile.txt")
-           .then(function (sampleFile) {
-               return Windows.Storage.FileIO.readTextAsync(sampleFile);
-           }).done(function (content) {
-               var bp = JSON.parse(content);
-               while (blogPosts.length > 0) {
-                   blogPosts.pop();
-               }
-
-               for (var i = 1; i <= bp._lastNotifyLength; i++) {
-                   var p = bp._keyMap[i];
-                   if (p) {
-                       blogPosts.push({
-                           group: p.data.group,
-                           key: p.data.key,
-                           title: p.data.title,
-                           author: p.data.author,
-                           pubDate: p.data.pubDate,
-                           backgroundImage: p.data.backgroundImage,
-                           content: p.data.content,
-                           link: p.data.link
-                       });
-                   }
-               }
-           }, function () {
-           });
+        return localFolder.getFileAsync("dataFile.txt");
     }
 
     WinJS.Namespace.define("Data", {
