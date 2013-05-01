@@ -39,19 +39,19 @@
         e.detail.applicationcommands = { "about": { title: "Acerca de", href: "/pages//about.html" } };
         WinJS.UI.SettingsFlyout.populateSettings(e);
     };
-
-
-    function refreshContent() {
-        Data.refresh();
-    };
     
     app.onerror = function (e) {
 
         var dialog = new Windows.UI.Popups.MessageDialog(
-            e.detail.errorMessage, "Se produjo un error inesperado.");
+            "Detalle: " + (e.detail.errorMessage ? e.detail.errorMessage : ( e.detail.error ? e.detail.error : "desconocido." )), "Ups. Se produjo un error.");
 
-        dialog.showAsync().done();
+        WinJS.Navigation.navigate("/pages/home/home.html", nav.state);
 
+        try {
+            dialog.showAsync().done();
+        } catch(ee) {
+
+        } 
         return true;
     };
 
