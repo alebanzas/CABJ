@@ -14,15 +14,17 @@
     var utils = WinJS.Utilities;
     var searchPageURI = "/pages/searchResults/searchResults.html";
     var listView;
-
-    var that = ui.Pages.define(searchPageURI, {
+    var that;
+    
+    ui.Pages.define(searchPageURI, {
         _filters: [],
         _lastSearch: "",
 
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
-            
+            that = this;
+
             listView = element.querySelector(".resultslist").winControl;
             //listView.itemDataSource = Data.items.dataSource;
             //listView.groupDataSource = null;
