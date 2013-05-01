@@ -1,19 +1,4 @@
-﻿.searchResults header[role=banner] .titlearea {
-    -ms-grid-column: 2;
-    -ms-grid-columns: auto 20px 1fr 20px;
-    display: -ms-grid;
-}
-
-    .searchResults header[role=banner] .titlearea .pagetitle {
-        width: auto;
-    }
-
-    .searchResults header[role=banner] .titlearea .pagesubtitle {
-        -ms-grid-column: 3;
-        margin-top: 32px;
-    }
-
-.searchResults section[role=main] {
+﻿.searchResults section[role=main] {
     /* Define a grid with rows for the filters and results */
     -ms-grid-columns: 1fr;
     -ms-grid-rows: 180px 1fr;
