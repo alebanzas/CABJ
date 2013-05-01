@@ -5,6 +5,7 @@
     var appViewState = Windows.UI.ViewManagement.ApplicationViewState;
     var nav = WinJS.Navigation;
     var ui = WinJS.UI;
+    var loaded = false;
 
     function multisizeItemTemplateRenderer(itemPromise) {
         return itemPromise.then(function (currentItem) {
@@ -43,7 +44,11 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
 
-            Data.refresh().done();
+            if(!loaded){
+                Data.refresh().done(function() {
+                    loaded = true;
+                });
+            }
 
             var listView = element.querySelector(".groupeditemslist").winControl;
             var itemTemplate = element.querySelector(".itemtemplate");
