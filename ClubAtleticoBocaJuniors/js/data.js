@@ -7,7 +7,7 @@
         //{ key: "group2", url: 'http://www.ole.com.ar/rss/boca-juniors/', logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
     ];
 
-    var loaded = false;
+    var refreshed = false;
 
     var blogPosts = new WinJS.Binding.List();
     var groupedItems = blogPosts.createGrouped(
@@ -85,15 +85,15 @@
             var header = document.querySelector("header h1");
             header.appendChild(pr);
 
-            if (loaded) {
+            if (refreshed) {
                 var progress = document.getElementsByTagName('progress');
                 progress[0].style.display = "none";
-                return;
+                return new WinJS.Promise();
             }
 
             return getFeeds()
-                .then(function (feeds) {
-                    feeds.forEach(function (feed) {
+                .then(function (news) {
+                    news.forEach(function (feed) {
                         feed.dataPromise.then(function (articlesResponse) {
                             
                             if (feed.redererFunc) {
@@ -112,17 +112,18 @@
                             }
                         });
                     });
-                    loaded = true;
+                    refreshed = true;
                     writeFile(JSON.stringify(blogPosts));
                 })
-                .then(function (feeds) {
+                .then(function (ffs) {
                     header.removeChild(pr);
-                    return feeds;
+                    return ffs;
                 });
         } else {
-            loaded = false;
+            refreshed = false;
             readFile();
             showConnectionError();
+            return new WinJS.Promise();
         }
     };
 
@@ -133,12 +134,14 @@
 
     function getGroupInfoFromXml(articleSyndication, feed) {
         // Get the blog title and last updated date.
+        var ds;
+        var date = "";
         if (articleSyndication.querySelector("feed") != null) {
             feed.title = articleSyndication.querySelector(
                 "feed > title").textContent;
-            var ds = articleSyndication.querySelector(
+            ds = articleSyndication.querySelector(
                 "feed > updated").textContent;
-            var date = ds.substring(5, 7) + "-" + ds.substring(8, 10) + "-" + ds.substring(0, 4);
+            date = ds.substring(5, 7) + "-" + ds.substring(8, 10) + "-" + ds.substring(0, 4);
             var author = articleSyndication.querySelector(
                 "author > name").textContent;
             feed.description = "Por " + author + " actualizado " + date;
@@ -152,12 +155,12 @@
             var month = currentTime.getMonth() + 1;
             var day = currentTime.getDate();
             var year = currentTime.getFullYear();
-            var ds = month + "/" + day + "/" + year;
+            ds = month + "/" + day + "/" + year;
             if (articleSyndication.querySelector("channel > pubDate") != null)
                 ds = articleSyndication.querySelector("channel > pubDate").textContent;
             if (articleSyndication.querySelector("channel > lastBuildDate") != null)
                 ds = articleSyndication.querySelector("channel > lastBuildDate").textContent;
-            var date = ds.substring(5, 7) + "-" + ds.substring(8, 11) + "-" + ds.substring(12, 16);
+            date = ds.substring(5, 7) + "-" + ds.substring(8, 11) + "-" + ds.substring(12, 16);
             feed.description = "Actualizado " + date;
             feed.subtitle = articleSyndication.querySelector("channel > description").textContent;
 
@@ -288,7 +291,7 @@
         resolveGroupReference: resolveGroupReference,
         resolveItemReference: resolveItemReference,
         refresh: getBlogPosts,
-        loaded: loaded,
+        loaded: refreshed,
         isInternetAvailable: isInternetAvailable,
         showConnectionError: showConnectionError
     });
