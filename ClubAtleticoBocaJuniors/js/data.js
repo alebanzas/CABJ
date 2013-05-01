@@ -25,7 +25,7 @@
             var postTitle = $(".info strong", item).text();
             var postAuthor = "CABJ Oficial";
             var postDate = $(".fecha", item).text();
-            var imageUrl = "http://www.bocajuniors.com.ar/" + $(".img img", item).attr("src");
+            var imageUrl = "http://www.bocajuniors.com.ar/" + $(".img img:last", item).attr("src");
             var link = "http://www.bocajuniors.com.ar/" + $("a", item).attr("href");
             var staticContent = $(".info", item).html();
             
