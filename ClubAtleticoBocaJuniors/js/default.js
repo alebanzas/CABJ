@@ -48,7 +48,7 @@
     app.onerror = function (e) {
 
         var dialog = new Windows.UI.Popups.MessageDialog(
-            e.detail.stack, e.detail.message);
+            e.detail.errorMessage, "Se produjo un error inesperado.");
 
         dialog.showAsync().done();
 
