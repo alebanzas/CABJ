@@ -130,34 +130,36 @@
                     return ffs;
                 });
         } else {
-            return readFile().then(function(sampleFile) {
-                                return Windows.Storage.FileIO.readTextAsync(sampleFile);
-                            }).then(function(content) {
-                                //showConnectionError();
-                                endRequest();
-                                return content;
-                            }).then(function(content) {
-                                var bp = JSON.parse(content);
-                                while (blogPosts.length > 0) {
-                                    blogPosts.pop();
-                                }
+            return readFile().then(function (sampleFile) {
+                if (!isInternetAvailable()) {
+                    showConnectionError();
+                }
+                endRequest();
+                return Windows.Storage.FileIO.readTextAsync(sampleFile);
+            }).then(function(content) {
+                return content;
+            }).then(function(content) {
+                var bp = JSON.parse(content);
+                while (blogPosts.length > 0) {
+                    blogPosts.pop();
+                }
                                 
-                                for (var i = bp._currentKey - bp._lastNotifyLength + 1; i <= bp._currentKey; i++) {
-                                    var p = bp._keyMap[i];
-                                    if (p) {
-                                        blogPosts.push({
-                                            group: p.data.group,
-                                            key: p.data.key,
-                                            title: p.data.title,
-                                            author: p.data.author,
-                                            pubDate: p.data.pubDate,
-                                            backgroundImage: p.data.backgroundImage,
-                                            content: p.data.content,
-                                            link: p.data.link
-                                        });
-                                    }
-                                }
-                            });
+                for (var i = bp._currentKey - bp._lastNotifyLength + 1; i <= bp._currentKey; i++) {
+                    var p = bp._keyMap[i];
+                    if (p) {
+                        blogPosts.push({
+                            group: p.data.group,
+                            key: p.data.key,
+                            title: p.data.title,
+                            author: p.data.author,
+                            pubDate: p.data.pubDate,
+                            backgroundImage: p.data.backgroundImage,
+                            content: p.data.content,
+                            link: p.data.link
+                        });
+                    }
+                }
+            });
         }
     };
 
@@ -282,14 +284,18 @@
 
 
     function writeFile(content) {
-        localFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
+        return localFolder.createFileAsync("dataFile.txt", Windows.Storage.CreationCollisionOption.replaceExisting)
            .then(function (dataFile) {
                return Windows.Storage.FileIO.writeTextAsync(dataFile, content);
            });
     }
 
     function readFile() {
-        return localFolder.getFileAsync("dataFile.txt");
+        return localFolder.getFileAsync("dataFile.txt").then(function(file) {
+            return file;
+        }, function(err) {
+            return writeFile("");
+        });
     }
 
     WinJS.Namespace.define("Data", {

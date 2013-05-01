@@ -43,7 +43,7 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
 
-            Data.refresh();
+            Data.refresh().done();
 
             var listView = element.querySelector(".groupeditemslist").winControl;
             var itemTemplate = element.querySelector(".itemtemplate");
