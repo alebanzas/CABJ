@@ -68,7 +68,12 @@
                             var src = $(this).attr("src");
                             if (src) {
                                 $(this).attr("src", "http://www.bocajuniors.com.ar/" + src);
-                                $(this).attr("onerror", "this.src='http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png'");
+                                $(this).error(function () {
+                                    $(this).attr("src", "http://www.bocajuniors.com.ar/" + src.replace("_0-lo.jpg", "_1-lo.jpg"));
+                                    $(this).error(function () {
+                                        $(this).attr("src", "http://www.bocajuniors.com.ar/img/es-ar/logo-boca_juniors_v2.png");
+                                    });
+                                });
                             } else {
                                 $(this).remove();
                             }
