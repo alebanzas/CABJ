@@ -48,7 +48,7 @@
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>es</DefaultLanguage>
     <PackageCertificateKeyFile>ClubAtleticoBocaJuniors_StoreKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>12CB71591325A6A6368FE3C8F9B3D7130401D9A3</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>020B899D1AE8DF6FB055634EE61C7EF9E366AEB5</PackageCertificateThumbprint>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
   </PropertyGroup>
   <ItemGroup>
