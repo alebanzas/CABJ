@@ -337,14 +337,13 @@
     <Language Code="zu-za" InMinimumRequirementSet="false" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>BocaJuniors.ClubAltticoBocaJuniors</MainPackageIdentityName>
+    <MainPackageIdentityName>BocaJuniors.ClubAtlticoBocaJuniors</MainPackageIdentityName>
     <ReservedNames>
-      <ReservedName>Club Altético Boca Juniors</ReservedName>
-      <ReservedName>BocaJrsOficial</ReservedName>
-      <ReservedName>Boca Jrs Oficial</ReservedName>
-      <ReservedName>Boca Juniors Oficial</ReservedName>
+      <ReservedName>Club Atlético Boca Juniors</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
-  <AccountPackageIdentityNames />
-  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/581dc075-feaf-41aa-9f0e-08fc55e398a2" />
+  <AccountPackageIdentityNames>
+    <MainPackageIdentityName>BocaJuniors.ClubAltticoBocaJuniors</MainPackageIdentityName>
+  </AccountPackageIdentityNames>
+  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/54c1764f-4a9c-4511-8067-26ac833fbd08" />
 </StoreAssociation>
