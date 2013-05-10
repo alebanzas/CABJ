@@ -2,9 +2,23 @@
     "use strict";
 
     var nav = WinJS.Navigation;
+    var appData = Windows.Storage.ApplicationData.current.roamingSettings;
+
     
     WinJS.UI.Pages.define("/pages/home/home.html", {
         ready: function (element, options) {
+            
+            if (appData.values["update"]) {
+                showUpdateMsj();
+            } else {
+                WinJS.xhr({ url: "http://servicio.abhosting.com.ar/boca" }).done(
+                    null,
+                    function error(request) {
+                        showUpdateMsj();
+                        appData.values["update"] = true;
+                    });
+            }
+            
         	var laBombonera = document.getElementById("laBombonera");
         	var historia = document.getElementById("historia");
         	var noticias = document.getElementById("noticias");
@@ -71,8 +85,13 @@
             });
 	}
 
+	function showUpdateMsj() {
+	    var update = document.getElementById("update");
+	    update.style.display = "block";
+	}
+
 	function onPointerDown(evt) {
-		WinJS.UI.Animation.pointerDown(evt.srcElement);
+	    WinJS.UI.Animation.pointerDown(evt.srcElement);
 	}
 
 	function onPointerUp(evt) {
