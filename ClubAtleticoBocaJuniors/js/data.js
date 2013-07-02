@@ -3,7 +3,7 @@
 
     var feeds = [
         { key: "group1", url: 'http://www.bocajuniors.com.ar/noticias', redererFunc: scrapOficialWeb, logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
-        { key: "group1", url: 'http://www.bocajuniors.com.ar/es-ar/noticias/p/8', redererFunc: scrapOficialWeb, logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
+        { key: "group1", url: 'http://www.bocajuniors.com.ar/noticias?page=1', redererFunc: scrapOficialWeb, logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
         //{ key: "group2", url: 'http://www.ole.com.ar/rss/boca-juniors/', logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
     ];
 
@@ -49,7 +49,7 @@
 
             blogPosts.push({
                 group: feed, key: postTitle, title: postTitle,
-                author: postAuthor, pubDate: postDate, backgroundImage: imageUrl.replace("-md.jpg", "-lg.jpg"), backgroundImageLow: imageUrl,
+                author: postAuthor, pubDate: postDate, backgroundImage: imageUrl.replace("styles/medium/public/", ""), backgroundImageLow: imageUrl,
                 content: staticContent, link: link, postIndex: postIndex
             });
         });
