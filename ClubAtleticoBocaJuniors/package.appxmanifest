@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="BocaJuniors.ClubAtlticoBocaJuniors" Version="3.0.0.1" Publisher="CN=789DAC69-89CD-426D-9CE1-6DB1DFC634B0" />
+  <Identity Name="BocaJuniors.ClubAtlticoBocaJuniors" Version="3.0.0.2" Publisher="CN=789DAC69-89CD-426D-9CE1-6DB1DFC634B0" />
   <Properties>
     <DisplayName>Club Atlético Boca Juniors</DisplayName>
     <PublisherDisplayName>Club Atletico Boca Juniors Asociacion Civil</PublisherDisplayName>
