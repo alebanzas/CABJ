@@ -3,7 +3,7 @@
 
     var feeds = [
         { key: "group1", url: 'http://www.bocajuniors.com.ar/noticias', redererFunc: scrapOficialWeb, logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
-        { key: "group1", url: 'http://www.bocajuniors.com.ar/es-ar/noticias/p/8', redererFunc: scrapOficialWeb, logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
+        { key: "group1", url: 'http://www.bocajuniors.com.ar/noticias?page=1', redererFunc: scrapOficialWeb, logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
         //{ key: "group2", url: 'http://www.ole.com.ar/rss/boca-juniors/', logoUrl: 'http://boca-imagenes.planisys.net/img/es-ar/logo-boca_juniors_v2.png' },
     ];
 
@@ -19,9 +19,9 @@
 
     function scrapOficialWeb(responseText, feed) {
         var rr = window.toStaticHTML(responseText);
-        
+
         var html = $("ul.listado li", $(rr)).each(function (postIndex) {
-            
+
             var item = $(this);
             var postTitle = $(".info strong", item).text();
             var postAuthor = "CABJ Oficial";
@@ -29,7 +29,7 @@
             var imageUrl = "http://www.bocajuniors.com.ar/" + $(".img img:last", item).attr("src");
             var link = "http://www.bocajuniors.com.ar/" + $("a", item).attr("href");
             var staticContent = $(".info", item).html();
-            
+
             //        <li>
             //            <a href="/es-ar/noticias/2012/12/15/triunfo-ante-obras">
             //                <span class="img">
@@ -49,7 +49,7 @@
 
             blogPosts.push({
                 group: feed, key: postTitle, title: postTitle,
-                author: postAuthor, pubDate: postDate, backgroundImage: imageUrl.replace("-md.jpg", "-lg.jpg"), backgroundImageLow: imageUrl,
+                author: postAuthor, pubDate: postDate, backgroundImage: imageUrl.replace("styles/medium/public/", ""), backgroundImageLow: imageUrl,
                 content: staticContent, link: link, postIndex: postIndex
             });
         });
@@ -72,7 +72,7 @@
             dataPromises.push(feed.dataPromise);
         });
 
-        return WinJS.Promise.join(dataPromises).then(function() { return feeds; }); // We return the feeds instead of the promise, for signature consistency
+        return WinJS.Promise.join(dataPromises).then(function () { return feeds; }); // We return the feeds instead of the promise, for signature consistency
     };
 
     function isInternetAvailable() {
@@ -85,7 +85,7 @@
         var header = document.querySelector("header h1");
         header.appendChild(pr);
     }
-    
+
     function endRequest() {
         var header = document.querySelector("header h1");
         var pr = document.querySelector("header h1 progress");
@@ -96,7 +96,7 @@
 
         startRequest();
         if (isInternetAvailable() && (blogPosts.length == 0 || !refreshed)) {
-            
+
             while (blogPosts.length > 0) {
                 blogPosts.pop();
             }
@@ -105,7 +105,7 @@
                 .then(function (news) {
                     news.forEach(function (feed) {
                         feed.dataPromise.then(function (articlesResponse) {
-                            
+
                             if (feed.redererFunc) {
                                 var responseText = articlesResponse.responseText;
                                 feed.redererFunc(responseText, feed);
@@ -136,14 +136,14 @@
                 }
                 endRequest();
                 return Windows.Storage.FileIO.readTextAsync(sampleFile);
-            }).then(function(content) {
+            }).then(function (content) {
                 return content;
-            }).then(function(content) {
+            }).then(function (content) {
                 var bp = JSON.parse(content);
                 while (blogPosts.length > 0) {
                     blogPosts.pop();
                 }
-                                
+
                 for (var i = bp._currentKey - bp._lastNotifyLength + 1; i <= bp._currentKey; i++) {
                     var p = bp._keyMap[i];
                     if (p) {
@@ -227,21 +227,21 @@
 
             // Avoid duplication if the user refreshes the data
             if (resolveItemReference([feed.key, postTitle]) == undefined) {
-	            var postAuthor;
-	            var pds;
-	            var postDate;
-	            var imageUrl;
-	            var staticContent;
-	            if (feed.itemsName == "entry") {
-		            postAuthor = post.querySelector("author > name").textContent;
-		            if (post.querySelector("published") != null) {
-			            pds = post.querySelector("published").textContent;
-		            } else if (post.querySelector("updated") != null) {
-			            pds = post.querySelector("updated").textContent;
-		            }
-		            postDate = pds.substring(5, 7) + "-" + pds.substring(8, 10)
+                var postAuthor;
+                var pds;
+                var postDate;
+                var imageUrl;
+                var staticContent;
+                if (feed.itemsName == "entry") {
+                    postAuthor = post.querySelector("author > name").textContent;
+                    if (post.querySelector("published") != null) {
+                        pds = post.querySelector("published").textContent;
+                    } else if (post.querySelector("updated") != null) {
+                        pds = post.querySelector("updated").textContent;
+                    }
+                    postDate = pds.substring(5, 7) + "-" + pds.substring(8, 10)
 			            + "-" + pds.substring(0, 4);
-		            if (post.querySelector("thumbnail") != null)
+                    if (post.querySelector("thumbnail") != null)
                         imageUrl = post.querySelector("thumbnail").attributes.url.value;
                     else if (post.querySelector("img") != null)
                         imageUrl = post.querySelector("img").attributes.src.value;
@@ -251,13 +251,13 @@
                         imageUrl = feed.logoUrl;
 
                     // Process the content so that it displays nicely.
-		            staticContent = toStaticHTML(post.querySelector(
+                    staticContent = toStaticHTML(post.querySelector(
 			            contentTag).textContent);
-	            } else if (feed.itemsName == "item") {
-		            postAuthor = feed.title;
-		            pds = post.querySelector("pubDate").textContent;
-		            postDate = pds.substring(5, 7) + "-" + pds.substring(8, 11) + "-" + pds.substring(12, 16);
-		            if (post.querySelector("enclosure") != null)
+                } else if (feed.itemsName == "item") {
+                    postAuthor = feed.title;
+                    pds = post.querySelector("pubDate").textContent;
+                    postDate = pds.substring(5, 7) + "-" + pds.substring(8, 11) + "-" + pds.substring(12, 16);
+                    if (post.querySelector("enclosure") != null)
                         imageUrl = post.querySelector("enclosure").attributes.url.value;
                     else if (post.querySelector("img") != null)
                         imageUrl = post.querySelector("img").attributes.src.value;
@@ -267,9 +267,9 @@
                         imageUrl = feed.logoUrl;
 
                     // Process the content so that it displays nicely.
-		            staticContent = toStaticHTML(post.querySelector(
+                    staticContent = toStaticHTML(post.querySelector(
 			            contentTag).textContent);
-	            }
+                }
 
                 // Store the post info we care about in the array.
                 blogPosts.push({
@@ -291,9 +291,9 @@
     }
 
     function readFile() {
-        return localFolder.getFileAsync("dataFile.txt").then(function(file) {
+        return localFolder.getFileAsync("dataFile.txt").then(function (file) {
             return file;
-        }, function(err) {
+        }, function (err) {
             return writeFile("");
         });
     }
