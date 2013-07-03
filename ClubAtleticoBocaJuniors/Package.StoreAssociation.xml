@@ -240,7 +240,6 @@
     <Language Code="pt-br" InMinimumRequirementSet="true" />
     <Language Code="pt-pt" InMinimumRequirementSet="true" />
     <Language Code="quc-latn" InMinimumRequirementSet="false" />
-    <Language Code="qut" InMinimumRequirementSet="false" />
     <Language Code="qut-gt" InMinimumRequirementSet="false" />
     <Language Code="qut-latn" InMinimumRequirementSet="false" />
     <Language Code="quz" InMinimumRequirementSet="false" />
@@ -292,9 +291,10 @@
     <Language Code="ti" InMinimumRequirementSet="false" />
     <Language Code="ti-et" InMinimumRequirementSet="false" />
     <Language Code="tk-cyrl" InMinimumRequirementSet="false" />
+    <Language Code="tk-cyrl-tr" InMinimumRequirementSet="false" />
     <Language Code="tk-latn" InMinimumRequirementSet="false" />
+    <Language Code="tk-latn-tr" InMinimumRequirementSet="false" />
     <Language Code="tk-tm" InMinimumRequirementSet="false" />
-    <Language Code="tk-tr" InMinimumRequirementSet="false" />
     <Language Code="tn" InMinimumRequirementSet="false" />
     <Language Code="tn-bw" InMinimumRequirementSet="false" />
     <Language Code="tn-za" InMinimumRequirementSet="false" />
@@ -350,23 +350,24 @@
     <MainPackageIdentityName>19566AleBanzas.AutocosmosChile</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.AutocosmosColombia</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.AutocosmosMexico</MainPackageIdentityName>
+    <MainPackageIdentityName>19566AleBanzas.BicicletasdeBuenosAires</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.BicisendasBuenosAires</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.BuenosAiresCiudad</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.Cadena3</MainPackageIdentityName>
+    <MainPackageIdentityName>19566AleBanzas.CajerosAutomticosBA</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.ClubAtleticoIndependiente</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.ClubAtleticoRiverPlate</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.ClubAtleticoSanLorenzodeAlmagro</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.ClubAtleticoVelezSarsfield</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.CNNRSS</MainPackageIdentityName>
+    <MainPackageIdentityName>19566AleBanzas.CotizacionesArgentinas</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.DeAutos.com</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.DeMotores.com</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.ElEconomista</MainPackageIdentityName>
-    <MainPackageIdentityName>19566AleBanzas.ElEncantadordePerros</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.EnElSubte.com</MainPackageIdentityName>
-    <MainPackageIdentityName>19566AleBanzas.FedeRSSImageViewer</MainPackageIdentityName>
+    <MainPackageIdentityName>19566AleBanzas.GuaTransporteBA</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.IEEEReader</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.Info-Web</MainPackageIdentityName>
-    <MainPackageIdentityName>19566AleBanzas.LectordeMuchoRock</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.LectordeNoticias</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.LectordeNoticiasDeportivas</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.MercadoLibre</MainPackageIdentityName>
@@ -376,7 +377,6 @@
     <MainPackageIdentityName>19566AleBanzas.NoticiasdeMusica</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.Noticiasdeportivas</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.NoticiasVarias</MainPackageIdentityName>
-    <MainPackageIdentityName>19566AleBanzas.OlDiarioDeportivo</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.OvacionDigital</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.RacingClub</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.ReaderNTC</MainPackageIdentityName>
@@ -386,20 +386,15 @@
     <MainPackageIdentityName>19566AleBanzas.RSSGAMES</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.SaludRSS</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.TeloEncuentro</MainPackageIdentityName>
+    <MainPackageIdentityName>19566AleBanzas.Traducime</MainPackageIdentityName>
+    <MainPackageIdentityName>19566AleBanzas.TransporteCercano</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.UADE</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.UB</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.UBA</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.UCA</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.UCES</MainPackageIdentityName>
-    <MainPackageIdentityName>19566AleBanzas.UCSE</MainPackageIdentityName>
-    <MainPackageIdentityName>19566AleBanzas.UCSE-LectorRSS</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.UCSE-Noticias</MainPackageIdentityName>
     <MainPackageIdentityName>19566AleBanzas.UP</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/a9ac2c24-67b9-4ab3-8e10-cf9c4e3a28e4">
-    <PackageInfo>
-      <PackageArchitecture>neutral</PackageArchitecture>
-      <PackageMaxArchitectureVersion>1.0.0.3</PackageMaxArchitectureVersion>
-    </PackageInfo>
-  </PackageInfoList>
+  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/a9ac2c24-67b9-4ab3-8e10-cf9c4e3a28e4" />
 </StoreAssociation>
